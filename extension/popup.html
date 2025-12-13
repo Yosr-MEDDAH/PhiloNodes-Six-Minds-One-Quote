@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philosophical Wisdom</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 420px;
+      font-family: 'Palatino', 'Georgia', serif;
+      background: linear-gradient(135deg, #f5f0e8 0%, #ebe4d8 100%);
+      color: #2c2416;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #6b5d4f 0%, #4a3f35 100%);
+      color: #f5f0e8;
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 0 0 20px 20px;
+    }
+    
+    .header h1 {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    
+    .header .subtitle {
+      font-size: 13px;
+      opacity: 0.9;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+    
+    .tabs {
+      display: flex;
+      background: rgba(107, 93, 79, 0.08);
+      border-radius: 16px;
+      margin: 20px;
+      padding: 4px;
+      gap: 4px;
+    }
+    
+    .tab {
+      flex: 1;
+      padding: 12px 8px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 13px;
+      background: transparent;
+      border: none;
+      color: #2c2416;
+      transition: all 0.3s ease;
+      font-family: 'Palatino', 'Georgia', serif;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+    
+    .tab:hover {
+      background: rgba(107, 93, 79, 0.12);
+    }
+    
+    .tab.active {
+      background: linear-gradient(135deg, #6b5d4f 0%, #5a4f43 100%);
+      color: #f5f0e8;
+      box-shadow: 0 3px 8px rgba(107, 93, 79, 0.3);
+    }
+    
+    .content {
+      padding: 20px;
+      max-height: 420px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #6b5d4f #f5f0e8;
+    }
+    
+    .content::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .content::-webkit-scrollbar-track {
+      background: #f5f0e8;
+      border-radius: 10px;
+    }
+    
+    .content::-webkit-scrollbar-thumb {
+      background: #6b5d4f;
+      border-radius: 10px;
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.35s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .quote-card {
+      background: linear-gradient(145deg, #ffffff 0%, #faf8f3 100%);
+      border: 2px solid #d9cdb8;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 6px 16px rgba(107, 93, 79, 0.12);
+      transition: all 0.3s ease;
+    }
+    
+    .quote-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(107, 93, 79, 0.18);
+    }
+    
+    .quote-text {
+      font-size: 15px;
+      line-height: 1.7;
+      font-style: italic;
+      color: #2c2416;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    
+    .quote-source {
+      font-size: 12px;
+      color: #6b5d4f;
+      text-align: right;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    
+    .consensus-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #6b5d4f 0%, #5a4f43 100%);
+      color: #f5f0e8;
+      padding: 6px 14px;
+      border-radius: 16px;
+      font-size: 11px;
+      margin-top: 12px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #6b5d4f 0%, #5a4f43 100%);
+      color: #f5f0e8;
+      border: none;
+      border-radius: 16px;
+      font-size: 14px;
+      font-family: 'Palatino', 'Georgia', serif;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba(107, 93, 79, 0.25);
+      margin-bottom: 20px;
+    }
+    
+    .btn:hover:not(:disabled) {
+      background: linear-gradient(135deg, #5a4f43 0%, #4a3f35 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(107, 93, 79, 0.35);
+    }
+    
+    .btn:active:not(:disabled) {
+      transform: translateY(0);
+    }
+    
+    .btn:disabled {
+      background: linear-gradient(135deg, #a39585 0%, #8d8274 100%);
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .context-info {
+      background: rgba(107, 93, 79, 0.08);
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    
+    .context-info strong {
+      color: #4a3f35;
+      font-weight: 600;
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6b5d4f;
+    }
+    
+    .spinner {
+      border: 3px solid #e5ddd0;
+      border-top: 3px solid #6b5d4f;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 12px;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .loading p {
+      font-style: italic;
+      font-size: 13px;
+    }
+    
+    .history-item {
+      background: linear-gradient(145deg, #ffffff 0%, #faf8f3 100%);
+      border-left: 4px solid #c9a961;
+      padding: 14px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      border-radius: 0 12px 12px 0;
+      box-shadow: 0 3px 8px rgba(107, 93, 79, 0.08);
+      transition: all 0.3s ease;
+    }
+    
+    .history-item:hover {
+      transform: translateX(3px);
+      box-shadow: 0 4px 12px rgba(107, 93, 79, 0.12);
+    }
+    
+    .history-item .quote {
+      font-style: italic;
+      margin-bottom: 8px;
+      line-height: 1.5;
+      color: #2c2416;
+    }
+    
+    .history-item .meta {
+      font-size: 10px;
+      color: #6b5d4f;
+      line-height: 1.4;
+    }
+    
+    .setting-item {
+      background: linear-gradient(145deg, #ffffff 0%, #faf8f3 100%);
+      padding: 14px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 8px rgba(107, 93, 79, 0.08);
+    }
+    
+    .setting-item label {
+      font-size: 13px;
+      flex: 1;
+      font-weight: 500;
+    }
+    
+    .toggle-switch {
+      position: relative;
+      width: 52px;
+      height: 26px;
+    }
+    
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #d0c4b0;
+      transition: 0.4s;
+      border-radius: 26px;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    input:checked + .slider {
+      background: linear-gradient(135deg, #6b5d4f 0%, #5a4f43 100%);
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6b5d4f;
+      font-style: italic;
+      line-height: 1.6;
+      font-size: 13px;
+    }
+    
+    .status-indicator {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      margin-right: 6px;
+      box-shadow: 0 0 6px currentColor;
+    }
+    
+    .status-indicator.online {
+      background: #10b981;
+      color: #10b981;
+    }
+    
+    .status-indicator.offline {
+      background: #ef4444;
+      color: #ef4444;
+    }
+    
+    .votes-detail {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 2px solid #e5ddd0;
+    }
+    
+    .votes-detail strong {
+      font-size: 12px;
+      color: #4a3f35;
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    
+    .vote-item {
+      font-size: 11px;
+      padding: 6px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #f5f0e8;
+    }
+    
+    .vote-item:last-child {
+      border-bottom: none;
+    }
+    
+    .vote-item.accept {
+      color: #10b981;
+      font-weight: 600;
+    }
+    
+    .vote-item.reject {
+      color: #ef4444;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Consensus Philosophique</h1>
+    <p class="subtitle">Sagesse des Plus Grands Esprits</p>
+  </div>
+  
+  <div class="tabs">
+    <button class="tab active" data-tab="current">Actuel</button>
+    <button class="tab" data-tab="history">Histoire</button>
+    <button class="tab" data-tab="settings">Paramètre</button>
+  </div>
+  
+  <div class="content">
+    <!-- Current Tab -->
+    <div class="tab-content active" id="current">
+      <button class="btn" id="getQuoteBtn">
+        Obtenir la sagesse pour cette page
+      </button>
+      
+      <div id="currentQuote">
+        <div class="empty-state">
+          Cliquez sur le bouton ci-dessus pour recevoir de la sagesse philosophique basée sur ce que vous visualisez actuellement.
+        </div>
+      </div>
+    </div>
+    
+    <!-- History Tab -->
+    <div class="tab-content" id="history">
+      <div id="historyList">
+        <div class="empty-state">
+          Votre historique de citations apparaîtra ici
+        </div>
+      </div>
+    </div>
+    
+    <!-- Settings Tab -->
+    <div class="tab-content" id="settings">
+      <div class="setting-item">
+        <label>Notifications automatiques</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="autoNotifications" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      
+      <div class="setting-item">
+        <label>
+          État du Backend
+          <span class="status-indicator online" id="backendStatus"></span>
+          <span id="backendStatusText">Vérification...</span>
+        </label>
+      </div>
+      
+      <div style="margin-top: 20px; padding: 16px; background: linear-gradient(145deg, #ffffff 0%, #faf8f3 100%); border-radius: 12px; font-size: 12px; line-height: 1.6; box-shadow: 0 3px 8px rgba(107, 93, 79, 0.08);">
+        <strong style="display: block; margin-bottom: 8px; color: #4a3f35;">À propos</strong>
+        <p>
+          Cette extension analyse votre contexte de navigation et recommande des citations philosophiques grâce à un système de consensus distribué composé de 6 nœuds philosophes.
+        </p>
+        <p style="margin-top: 12px; color: #6b5d4f;">
+          Assurez-vous que le serveur backend fonctionne à <code style="background: rgba(107, 93, 79, 0.1); padding: 2px 6px; border-radius: 6px; font-family: 'Courier New', monospace;">http://127.0.0.1:8000</code>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

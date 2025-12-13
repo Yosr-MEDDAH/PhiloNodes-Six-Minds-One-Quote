@@ -1,0 +1,1765 @@
+{
+  "quotes": [
+    {
+      "quoteId": 1,
+      "philosopherId": 1,
+      "quote": "Knowing yourself is the beginning of all wisdom",
+      "source": "Fragments attributed to Aristotle",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "self-knowledge", "connaissance de soi", "wisdom", "sagesse", "understanding", "compréhension", "virtue", "vertu", "introspection", "awareness", "conscience", 
+        "self-discovery", "découverte de soi", "insight", "perspicacité", "reflection", "réflexion", "enlightenment", "illumination", "science", "réalisation", 
+        "self-awareness", "mindfulness", "pleine conscience", "méditation", "meditation", "introspection", "self-understanding", "identité", "identity", "âme", "soul", 
+        "essence", "être", "being", "existence", "vérité", "truth", "recherche de soi", "self-seeking", "maturité", "maturity", "développement personnel", "personal growth", 
+        "philosophie", "philosophy", "humilité", "humility", "principes", "principles", "fondation", "foundation", "origine", "origin", "commencement", "beginning",
+        "العلم بالذات", "حكمة", "وعي", "إدراك", "تأمل", "استنارة", "معرفة", "نفس", "البصيرة", "تفكير", "تطوير الذات", "الأصل", "الأساس", "بداية", "جوهر", "كينونة", 
+        "الانفتاح", "الوعي الذاتي", "الروح", "الفضيلة", "التعقل", "الفهم العميق", "الصدق مع النفس", "الرشد", "التهذيب", "الاستكشاف", "exploration", "savoir", "knowledge",
+        "autonomie", "autonomy", "authenticité", "authenticity", "spiritualité", "spirituality", "meaning", "sens", "vérité intérieure", "inner truth", "essence de soi",
+        "quête", "quest", "illumination", "الرؤية", "التميز", "distinction", "إثراء", "enrichment", "exploration de soi", "self-exploration", "nature"
+      ]
+    },
+    {
+      "quoteId": 2,
+      "philosopherId": 1,
+      "quote": "It is the mark of an educated mind to entertain a thought without accepting it",
+      "source": "Attributed, Nicomachean Ethics tradition",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "education", "éducation", "learning", "apprentissage", "open-mindedness", "ouverture d'esprit", "reason", "raison", "critical thinking", "pensée critique", 
+        "intellectual", "intellectuel", "analysis", "analyse", "objectivity", "objectivité", "study", "étude", "contemplation", "mind", "esprit", "tolérance", "tolerance", 
+        "scepticisme", "scepticism", "examen", "examination", "évaluation", "evaluation", "jugement", "judgment", "discernement", "discernment", "curiosité", "curiosity", 
+        "doute", "doubt", "investigation", "recherche", "research", "pensée libre", "free thought", "flexibilité mentale", "mental flexibility", "intelligence", 
+        "rationalité", "rationality", "information", "connaissance", "savoir", "science", "académique", "academic", "formation", "training", "enseignement", "teaching",
+        "بحث", "تعليم", "معرفة", "فكر نقدي", "منطق", "تحليل", "استيعاب", "فهم", "العقل المستنير", "الانفتاح الفكري", "الشك", "التقييم", "التدبر", "الاستقصاء", 
+        "الحيادية", "عدم الانحياز", "مرونة", "البحث العلمي", "التفكير", "الاستدلال", "المنهجية", "methodology", "perspective", "point de vue", "tolérer", "examiner", 
+        "examiner", "considérer", "consider", "hypothèque", "hypothesis", "preuve", "evidence", "neutralité", "neutrality", "curiosité intellectuelle"
+      ]
+    },
+    {
+      "quoteId": 3,
+      "philosopherId": 1,
+      "quote": "We are what we repeatedly do. Excellence is not an act, but a habit",
+      "source": "Nicomachean Ethics",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "habit", "habitude", "virtue", "vertu", "ethics", "éthique", "excellence", "practice", "pratique", "discipline", "character", "caractère", "behavior", 
+        "comportement", "consistency", "cohérence", "routine", "mastery", "maîtrise", "action", "deed", "acte", "performance", "effort", "travail", "work", 
+        "détermination", "determination", "amélioration", "improvement", "perfectionnement", "perfection", "training", "entraînement", "persévérance", "perseverance", 
+        "régularité", "regularity", "intégrité", "integrity", "valeur", "value", "morale", "moral", "habitude quotidienne", "daily routine", "méthode", "method",
+        "عمل", "انضباط", "عادة", "سلوك", "جودة", "إتقان", "مثابرة", "جهد", "كمال", "تصرف", "أخلاق", "شخصية", "استمرارية", "روتين", "فضيلة", "تميز", 
+        "ممارسة", "تكرار", "التزام", "commitment", "إرادة", "willpower", "création", "creation", "construction", "bâtir", "build", "qualité", "quality", "performance", 
+        "succès", "success", "réussite", "achèvement", "achievement", "réglementation", "regulation", "standard", "norme", "mode de vie", "lifestyle"
+      ]
+    },
+    {
+      "quoteId": 4,
+      "philosopherId": 1,
+      "quote": "Man is by nature a political animal destined to live in society",
+      "source": "Politics",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "human nature", "nature humaine", "society", "société", "politics", "politique", "community", "communauté", "social", "civilization", "civilisation", 
+        "collective", "collectif", "belonging", "appartenance", "connection", "connexion", "relationships", "relations", "animal politique", "political animal", 
+        "interdépendance", "interdependence", "coexistence", "coopération", "cooperation", "organisation", "structure", "gouvernement", "government", "lois", "laws", 
+        "ordre", "order", "citoyenneté", "citizenship", "bien commun", "common good", "zoon politikon", "vie sociale", "social life", "destinée", "destiny",
+        "إنسان", "مجتمع", "سياسة", "طبيعة بشرية", "تجمع", "علاقات", "تفاعل", "group", "مواطنة", "صالح عام", "حضارة", "تنظيم اجتماعي", "ارتباط", "جماعة", 
+        "تشارك", "participation", "devoir social", "social duty", "rôles", "roles", "hiérarchie", "hierarchy", "structure sociale", "social structure", "vie publique", 
+        "public life", "civique", "civic", "éthique sociale", "social ethics", "vivre ensemble", "living together", "obligation", "obligation", "législation", "legislation"
+      ]
+    },
+    {
+      "quoteId": 5,
+      "philosopherId": 1,
+      "quote": "Without friends, no one would want to live, even with all other goods",
+      "source": "Nicomachean Ethics",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "friendship", "amitié", "relationships", "relations", "discipline", "virtue", "vertu", "loyalty", "loyauté", "companionship", "compagnonnage", "trust", 
+        "confiance", "bond", "lien", "connection", "connexion", "solidarity", "solidarité", "life", "vie", "happiness", "bonheur", "support", "soutien", 
+        "amour", "love", "attachement", "attachment", "interpersonnel", "interpersonal", "affectif", "affective", "valeur", "value", "essentiel", "essential", 
+        "besoin", "need", "humain", "human", "bien-être", "well-being", "partage", "sharing", "réconfort", "comfort", "aide", "help", "sociabilité", "sociability",
+        "صداقة", "وفاء", "ثقة", "روابط", "تعاون", "دعم", "حياة", "سعاده", "رفقة", "إخلاص", "تواصل", "احتياج", "ضرورة", "قيمة", "العلاقات الإنسانية", 
+        "محبة", "تضحية", "sacrifice", "bienveillance", "kindness", "intimité", "intimacy", "âme soeur", "soulmate", "camaraderie", "bienveillance", "échange", 
+        "exchange", "émotion", "emotion", "réciprocité", "reciprocity", "lien social", "social bond", "manque", "absence", "isolement", "isolation"
+      ]
+    },
+    {
+      "quoteId": 6,
+      "philosopherId": 1,
+      "quote": "Happiness depends upon ourselves and our character, not external things",
+      "source": "Nicomachean Ethics",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "happiness", "bonheur", "freedom", "liberté", "character", "caractère", "independence", "indépendance", "well-being", "bien-être", "inner peace", 
+        "paix intérieure", "self-reliance", "autonomie personnelle", "autonomy", "autonomie", "contentment", "contentement", "flourishing", "épanouissement", 
+        "eudaimonia", "sérénité", "serenity", "satisfaction", "pleasure", "plaisir", "joie", "joy", "virtue", "vertu", "maîtrise de soi", "self-control", 
+        "facteurs internes", "internal factors", "destinée", "destiny", "contrôle", "control", "fortune", "fortune", "externes", "external", "changement", "change",
+        "سعادة", "استقلال", "راحة", "رضا", "ذات", "داخلي", "نفس", "سلام", "ازدهار", "اكتفاء ذاتي", "قوة داخلية", "تحكم", "شخصية", "رفاهية", "حرية", 
+        "قناعة", "الأشياء الخارجية", "الأشياء المادية", "material things", "volonté", "will", "choix", "choice", "philosophie de vie", "life philosophy", "éthique", 
+        "ethics", "valeurs personnelles", "personal values", "développement", "development", "croissance", "growth", "accomplissement", "fulfillment", "vocation", "vocation"
+      ]
+    },
+    {
+      "quoteId": 7,
+      "philosopherId": 1,
+      "quote": "Patience is bitter, but its fruit is sweet",
+      "source": "Attributed to Aristotle",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "patience", "discipline", "perseverance", "persévérance", "endurance", "reward", "récompense", "virtue", "vertu", "waiting", "attente", "persistence", 
+        "persistance", "resilience", "résilience", "fortitude", "force d'âme", "long terme", "long term", "sacrifice", "effort", "travail", "work", "délai", "delay", 
+        "maturité", "maturity", "détermination", "determination", "discipline personnelle", "personal discipline", "difficulté", "difficulty", "souffrance", "suffering", 
+        "succès", "success", "achèvement", "completion", "résultat", "result", "temps", "time", "sagesse", "wisdom", "contrôle", "control", "tolérance", "tolerance",
+        "صبر", "مثابرة", "تحمل", "نتيجة", "جهد", "وقت", "تأخير", "مكافأة", "فضيلة", "صعوبة", "معاناة", "نجاح", "إنجاز", "عزيمة", "استمرارية", "طول البال", 
+        "الاستثمار", "investment", "croissance", "growth", "apprentissage", "learning", "persister", "to persist", "attendre", "to wait", "difficulté", "hardship", 
+        "résister", "to resist", "discipline mentale", "mental discipline", "fruit", "fruit", "douceur", "sweetness", "amer", "bitter", "persévérer"
+      ]
+    },
+    {
+      "quoteId": 8,
+      "philosopherId": 1,
+      "quote": "Reason is our supreme faculty; intellect is the best part of us",
+      "source": "Nicomachean Ethics",
+      "category": 8,
+      "categoryName": "Reason and logic",
+      "keywords": [
+        "reason", "raison", "intellect", "logic", "logique", "faculty", "faculté", "rationality", "rationalité", "thinking", "pensée", "mind", "esprit", "cognition", 
+        "intelligence", "wisdom", "sagesse", "suprême", "supreme", "supérieur", "superior", "analyse", "analysis", "science", "méthode", "method", "argument", 
+        "démonstration", "demonstration", "philosophie", "philosophy", "connaissance", "knowledge", "cerveau", "brain", "compréhension", "understanding", "vérité", "truth", 
+        "recherche", "research", "déduction", "deduction", "jugement", "judgment", "critique", "critique", "objective", "objective", "pensée claire", "clear thought",
+        "عقل", "منطق", "تفكير", "ذكاء", "فطنة", "فهم", "الأسمى", "الأفضل", "تحليل", "علم", "فلسفة", "معرفة", "حقيقة", "استدلال", "حكم", "قدرة عقلية", 
+        "البنية العقلية", "التعقل", "الإدراك", "العقلانية", "التفكر", "الذهن", "العقل المدبر", "mastermind", "supériorité", "supremacy", "capacité", "capacity", 
+        "intellectuel", "intellectual", "prouver", "to prove", "argumenter", "to argue", "rationaliser", "to rationalize", "clarté", "clarity", "précision", "precision"
+      ]
+    },
+    {
+      "quoteId": 9,
+      "philosopherId": 1,
+      "quote": "The state exists for the sake of a good life, not mere survival",
+      "source": "Politics",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "state", "état", "society", "société", "good life", "bonne vie", "flourishing", "épanouissement", "civilization", "civilisation", "governance", 
+        "gouvernance", "community", "communauté", "prosperity", "prospérité", "welfare", "bien-être", "politics", "politique", "survie", "survival", "but", "purpose", 
+        "objectif", "goal", "éthique sociale", "social ethics", "droit", "law", "législation", "legislation", "organisation", "organization", "système", "system", 
+        "citoyen", "citizen", "droits", "rights", "devoirs", "duties", "qualité de vie", "quality of life", "développement", "development", "ordre", "order",
+        "دولة", "عدالة", "مجتمع", "عيش كريم", "ازدهار", "تنظيم", "بقاء", "هدف", "غرض", "سياسة", "نظام", "حقوق", "واجبات", "مواطن", "قوانين", "حكم", 
+        "رفاهية", "حياة جيدة", "التنظيم الاجتماعي", "الكيان", "entity", "gouverner", "to govern", "réglementer", "to regulate", "institution", "institution", "valeurs", 
+        "values", "principe social", "social principle", "bien commun", "common good", "morale publique", "public morale", "fonction", "function", "rôle de l'État"
+      ]
+    },
+    {
+      "quoteId": 10,
+      "philosopherId": 1,
+      "quote": "The whole is greater than the sum of its parts",
+      "source": "Metaphysics",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "wisdom", "sagesse", "unity", "unité", "synthesis", "synthèse", "wholeness", "totalité", "integration", "intégration", "harmony", "harmonie", "collaboration", 
+        "collective", "collectif", "synergy", "synergie", "totality", "système", "system", "structure", "structure", "interconnexion", "interconnection", "global", "global", 
+        "holistique", "holistic", "émergence", "emergence", "complexité", "complexity", "métaphysique", "metaphysics", "relation", "relation", "interdépendance", 
+        "interdependence", "composants", "components", "assemblage", "assembly", "groupement", "grouping", "résultat", "result", "valeur ajoutée", "added value",
+        "كل", "مجموع", "وحدة", "تكامل", "تعاون", "نظام", "تركيب", "تناغم", "تضافر", "ترابط", "شمولية", "تعقيد", "كيان", "جزء", "علاقة", "تنسيق", 
+        "الكلية", "التجميع", "التفاعل", "interaction", "coordination", "coordination", "supériorité", "superiority", "vision globale", "global vision", "réseau", "network", 
+        "organisme", "organism", "composition", "composition", "organisation", "organization", "fonctionnement", "functioning", "relation causale", "causal relation"
+      ]
+    }, 
+   {
+      "quoteId": 11,
+      "philosopherId": 1,
+      "quote": "Quality is not an act, it is a habit",
+      "source": "Nicomachean Ethics tradition",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "quality", "qualité", "habit", "habitude", "excellence", "virtue", "vertu", "consistency", "cohérence", "practice", "pratique", 
+        "discipline", "character", "caractère", "standards", "normes", "behavior", "comportement", "routine", "routine", "mastery", 
+        "maîtrise", "performance", "effort", "travail", "work", "diligence", "assiduité", "amélioration continue", "continuous improvement", 
+        "perfectionnement", "perfection", "éthique professionnelle", "work ethics", "standard", "norme", "rigueur", "rigor", "précision", 
+        "precision", "intégrité", "integrity", "professionnalisme", "professionalism", "régularité", "regularity", "valeur", "value", 
+        "engagement", "commitment", "produit", "product", "service", "résultat", "result", "fiabilité", "reliability", "méthode", "method",
+        "جودة", "عادة", "تميز", "فضيلة", "سلوك", "انضباط", "استمرارية", "ممارسة", "إتقان", "شخصية", "معيار", "معايير", "أخلاق", "عمل", 
+        "جهد", "احترافية", "تحسين", "دقة", "مصداقية", "أداء", "نتيجة", "انجاز", "achievement", "مهارة", "skill", "تكرار", "repetition", 
+        "صناعة", "industry", "service client", "customer service", "artisanat", "craftsmanship", "investissement", "investment", 
+        "procédure", "procedure", "processus", "process", "culture", "culture", "habitude de qualité", "quality habit"
+      ]
+    },
+    {
+      "quoteId": 12,
+      "philosopherId": 1,
+      "quote": "The educated differ from the uneducated as much as the living differ from the dead",
+      "source": "Attributed to Aristotle",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "education", "éducation", "learning", "apprentissage", "knowledge", "connaissance", "wisdom", "sagesse", "enlightenment", 
+        "illumination", "growth", "croissance", "development", "développement", "transformation", "awareness", "conscience", 
+        "understanding", "compréhension", "ignorance", "ignorance", "différence", "difference", "vie", "life", "mort", "death", 
+        "esprit", "mind", "intellectuel", "intellectual", "raison", "reason", "rationalité", "rationality", "esprit critique", 
+        "critical mind", "culture", "culture", "information", "savoir", "science", "formation", "training", "instruction", 
+        "compétence", "skill", "perspectives", "perspectives", "émancipation", "emancipation", "libération", "liberation",
+        "تعليم", "تعلم", "معرفة", "حكمة", "جهل", "فرق", "حياة", "موت", "وعي", "إدراك", "تطور", "نمو", "ثقافة", "فهم", "عقل", 
+        "منطق", "فكر", "نقد", "تحصيل", "acquisition", "تمييز", "distinction", "قيمة", "value", "عقلانية", "rationality", 
+        "جهالة", "stupidity", "lumière", "light", "obscurité", "darkness", "liberté de l'esprit", "freedom of mind", "capacité", 
+        "capacity", "potentiel", "potential", "évolution", "evolution", "mûrir", "to mature", "comprendre le monde", "understand the world"
+      ]
+    },
+    {
+      "quoteId": 13,
+      "philosopherId": 1,
+      "quote": "To avoid criticism say nothing, do nothing, be nothing",
+      "source": "Attributed to Aristotle",
+      "category": 6,
+      "categoryName": "Freedom",
+      "keywords": [
+        "freedom", "liberté", "courage", "action", "criticism", "critique", "boldness", "audace", "risk", "risque", "authenticity", 
+        "authenticité", "independence", "indépendance", "self-expression", "expression de soi", "initiative", "inaction", "inaction", 
+        "silence", "silence", "peur", "fear", "conformité", "conformity", "médiocrité", "mediocrity", "changement", "change", "impact", 
+        "visibilité", "visibility", "jugement", "judgment", "opinion", "opinion", "passivité", "passivity", "non-existence", "non-être", 
+        "audace", "temerity", "créativité", "creativity", "originalité", "originality", "prise de position", "stance",
+        "حرية", "شجاعة", "عمل", "نقد", "جرأة", "خطر", "أصالة", "استقلال", "تعبير عن الذات", "مبادرة", "خوف", "صمت", "فشل", "failure", 
+        "نجاح", "success", "ظهور", "appearance", "حكم", "رأي", "تغيير", "change", "تأثير", "influence", "إبداع", "creativity", 
+        "كسل", "laziness", "lâcheté", "cowardice", "être", "to be", "ne rien faire", "do nothing", "parler", "to speak", "exister", 
+        "to exist", "contestation", "contestation", "débat", "debate", "conflit", "conflict", "reconnaissance", "recognition", "célébrité", "fame"
+      ]
+    },
+    {
+      "quoteId": 14,
+      "philosopherId": 1,
+      "quote": "The roots of education are bitter, but the fruit is sweet",
+      "source": "Attributed to Aristotle",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "education", "éducation", "learning", "apprentissage", "discipline", "reward", "récompense", "perseverance", "persévérance", 
+        "knowledge", "connaissance", "growth", "croissance", "development", "développement", "achievement", "réussite", "wisdom", 
+        "sagesse", "effort", "travail acharné", "hard work", "difficulté", "difficulty", "défi", "challenge", "résilience", "resilience", 
+        "patience", "patience", "long terme", "long term", "investissement", "investment", "bénéfice", "benefit", "maturité", "maturity", 
+        "succès", "success", "formation", "training", "étude", "study", "douloureux", "painful", "futur", "future", "mérite", "merit", 
+        "accomplissement", "accomplishment", "enseignement", "teaching", "racine", "root", "fruit", "fruit",
+        "تعليم", "تعلم", "انضباط", "مكافأة", "مثابرة", "معرفة", "نمو", "تطوير", "نجاح", "حكمة", "جهد", "صعوبة", "تحدي", "صبر", "استثمار", 
+        "فائدة", "مستقبل", "دراسة", "جذور", "ثمار", "عرق", "sweat", "labeur", "toil", "apprentissage", "scholarship", "évolution", 
+        "evolution", "croissance personnelle", "personal growth", "amertume", "bitterness", "douceur", "sweetness", "processus", 
+        "process", "sacrifice", "sacrifice", "temps", "time", "savoir-faire", "know-how", "formation initiale", "initial training"
+      ]
+    },
+    {
+      "quoteId": 15,
+      "philosopherId": 1,
+      "quote": "Hope is a waking dream",
+      "source": "Attributed to Aristotle",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "hope", "espoir", "dreams", "rêves", "optimism", "optimisme", "aspiration", "future", "avenir", "possibility", "possibilité", 
+        "inspiration", "motivation", "vision", "happiness", "bonheur", "volonté", "will", "désir", "desire", "attente", "expectation", 
+        "imagination", "imagination", "réalité", "reality", "éveil", "waking", "action", "action", "but", "purpose", "objectif", "goal", 
+        "fantaisie", "fantasy", "perspective", "perspective", "croyance", "belief", "confiance", "confidence", "lumière", "light", 
+        "changement", "change", "mouvement", "movement", "état d'esprit", "mindset",
+        "أمل", "أحلام", "تفاؤل", "طموح", "مستقبل", "إمكانية", "إلهام", "تحفيز", "رؤية", "سعادة", "إرادة", "رغبة", "توقع", "خيال", "واقع", 
+        "يقظة", "حركة", "هدف", "إيمان", "ثقة", "نور", "تغيير", "شعور", "feeling", "force motrice", "driving force", "source d'inspiration", 
+        "source of inspiration", "motivation intrinsèque", "intrinsic motivation", "attendre", "to expect", "perspective positive", 
+        "positive perspective", "vivre", "to live", "rêver", "to dream", "optimiste", "optimistic", "possibilités"
+      ]
+    },
+    {
+      "quoteId": 16,
+      "philosopherId": 2,
+      "quote": "Dare to know! Have courage to use your own understanding",
+      "source": "What is Enlightenment?",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "enlightenment", "lumières", "knowledge", "connaissance", "courage", "wisdom", "sagesse", "autonomy", "autonomie", "thinking", 
+        "pensée", "independence", "indépendance", "reason", "raison", "self-reliance", "autonomie personnelle", "understanding", 
+        "compréhension", "oser", "to dare", "utilisation", "use", "esprit", "mind", "rationalité", "rationality", "jugement", 
+        "judgment", "liberté", "freedom", "tutelle", "guardianship", "immaturité", "immaturity", "progrès", "progress", 
+        "philosophie", "philosophy", "action", "action", "défier", "to challenge", "autorité", "authority", "individu", "individual",
+        "تنوير", "معرفة", "شجاعة", "حكمة", "استقلال ذاتي", "تفكير", "استيعاب", "فهم", "عقل", "منطق", "تحرر", "liberation", "وصاية", 
+        "immature", "نضج", "maturity", "تحدي", "authority", "سلطة", "تقدم", "فرد", "فلسفة", "تحمل المسؤولية", "take responsibility", 
+        "عقلانية", "rationality", "إعمال العقل", "use of reason", "audace intellectuelle", "intellectual boldness", "savoir", 
+        "to know", "courage moral", "moral courage", "maîtrise de soi", "self-mastery", "auto-détermination", "self-determination", 
+        "liberté de pensée", "freedom of thought", "émancipation intellectuelle"
+      ]
+    },
+    {
+      "quoteId": 17,
+      "philosopherId": 2,
+      "quote": "Science is organized knowledge; wisdom is organized life",
+      "source": "Critique of Pure Reason",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "science", "knowledge", "connaissance", "organization", "organisation", "learning", "apprentissage", "wisdom", "sagesse", 
+        "structure", "understanding", "compréhension", "education", "éducation", "method", "méthode", "system", "système", 
+        "discipline", "discipline", "vie", "life", "ordre", "order", "rationalité", "rationality", "classification", "classification", 
+        "savoir", "savoir", "expérience", "experience", "théorie", "theory", "pratique", "practice", "cohérence", "consistency", 
+        "application", "application", "vérité", "truth", "savoir-vivre", "know-how",
+        "علم", "معرفة", "تنظيم", "تعلم", "حكمة", "هيكلة", "نظام", "منهج", "انضباط", "حياة", "ترتيب", "عقلانية", "تصنيف", "فهم", 
+        "تعليم", "خبرة", "نظرية", "تطبيق", "صحة", "انسجام", "harmony", "قواعد", "rules", "منظمة", "organized", "تفكير منهجي", 
+        "systematic thinking", "pratique de vie", "life practice", "structure du savoir", "knowledge structure", "gestion", 
+        "management", "savoir organisé", "organized knowledge", "vie organisée", "organized life", "coordination", "coordination", 
+        "efficacité", "efficiency", "discipline de vie"
+      ]
+    },
+    {
+      "quoteId": 18,
+      "philosopherId": 2,
+      "quote": "Act only by maxims you could will to become universal laws",
+      "source": "Groundwork of the Metaphysics of Morals",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "categorical imperative", "impératif catégorique", "duty", "devoir", "morality", "moralité", "universal law", "loi universelle", 
+        "ethics", "éthique", "principle", "principe", "obligation", "responsibility", "responsabilité", "conduct", "conduite", 
+        "behavior", "comportement", "maxim", "maxime", "action", "acte", "volonté", "will", "rationalité", "rationality", "généralisation", 
+        "generalization", "norme", "norm", "règle", "rule", "devoir moral", "moral duty", "respect", "respect", "conséquences", 
+        "consequences", "rationalisation", "rationalization", "législation", "legislation", "universel", "universal", "légitimité", "legitimacy",
+        "واجب", "أخلاق", "قانون عالمي", "مبدأ", "إلزام", "مسؤولية", "سلوك", "فعل", "إرادة", "عقلانية", "تعميم", "قاعدة", "احترام", 
+        "ضمير", "conscience", "التزام", "commitment", "إجبار", "compulsion", "صلاحية", "validity", "كوني", "cosmic", "قانون", 
+        "law", "تشريع", "legislation", "نية", "intention", "أخلاقي", "ethical", "النية الحسنة", "good will", "قاعدة أخلاقية", 
+        "moral rule", "impératif", "imperative", "éthique du devoir", "duty ethics", "règle d'or", "golden rule"
+      ]
+    },
+    {
+      "quoteId": 19,
+      "philosopherId": 2,
+      "quote": "Humans alone possess moral dignity and the capacity for obligation",
+      "source": "Metaphysics of Morals",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "dignity", "dignité", "morality", "moralité", "human nature", "nature humaine", "obligation", "respect", "worth", "valeur", 
+        "value", "humanity", "humanité", "ethics", "éthique", "responsibility", "responsabilité", "autonomie", "autonomy", 
+        "raison", "reason", "être humain", "human being", "unicité", "uniqueness", "conscience", "conscience", "devoir", "duty", 
+        "fin en soi", "end in itself", "droits", "rights", "législation morale", "moral legislation", "libre arbitre", "free will", 
+        "supériorité", "superiority", "spécificité", "specificity", "rationalité", "rationality", "personne", "person",
+        "كرامة", "أخلاق", "طبيعة بشرية", "إلزام", "احترام", "قيمة", "إنسانية", "مسؤولية", "عقل", "وعي", "واجب", "حقوق", "كائن بشري", 
+        "تفرّد", "uniqueness", "سيادة", "sovereignty", "استقلالية", "independence", "الغاية", "purpose", "ذات", "self", "جوهر", 
+        "essence", "مكانة", "status", "مكانه أخلاقية", "moral status", "قانون ذاتي", "self-law", "الحرية الأخلاقية", "moral freedom", 
+        "supériorité morale", "moral superiority", "autonomie de la volonté", "autonomy of will", "finitude", "finitude", "morale kantienne"
+      ]
+    },
+    {
+      "quoteId": 20,
+      "philosopherId": 2,
+      "quote": "Duty is the necessity of acting from respect for moral law",
+      "source": "Groundwork of the Metaphysics of Morals",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "duty", "devoir", "discipline", "action", "moral law", "loi morale", "obligation", "responsibility", "responsabilité", 
+        "respect", "ethics", "éthique", "conduct", "conduite", "commitment", "engagement", "nécessité", "necessity", "volonté", 
+        "will", "raison", "reason", "rationalité", "rationality", "impératif", "imperative", "principe", "principle", "maxime", 
+        "maxim", "loi universelle", "universal law", "morale", "morality", "obéissance", "obedience", "règle", "rule", 
+        "autonomie", "autonomy", "vertu", "virtue", "rigueur", "rigor", "devoir envers la loi", "duty to law",
+        "واجب", "انضباط", "فعل", "قانون أخلاقي", "إلزام", "مسؤولية", "احترام", "أخلاق", "سلوك", "التزام", "ضرورة", "إرادة", 
+        "عقل", "عقلانية", "مبدأ", "قانون عالمي", "طاعة", "rule", "قاعدة", "نزاهة", "integrity", "ممارسة", "practice", "تطبيق", 
+        "application", "سلطة", "authority", "النظام الأخلاقي", "moral order", "الامتثال", "compliance", "الالتزام", "duty", 
+        "الضرورة الأخلاقية", "moral necessity", "kantisme", "kantianism", "impératif pratique", "practical imperative"
+      ]
+    },
+    {
+      "quoteId": 21,
+      "philosopherId": 2,
+      "quote": "Freedom means independence from the compulsion of another's will",
+      "source": "Metaphysics of Morals",
+      "category": 6,
+      "categoryName": "Freedom",
+      "keywords": [
+        "freedom", "liberté", "autonomy", "autonomie", "independence", "indépendance", "will", "volonté", "liberty", 
+        "self-determination", "autodétermination", "sovereignty", "souveraineté", "choice", "choix", "agency", 
+        "self-governance", "auto-gouvernance", "compulsion", "contrainte", "domination", "domination", "oppression", 
+        "oppression", "esclavage", "slavery", "volonté d'autrui", "another's will", "non-subordination", "émancipation", 
+        "emancipation", "droit", "right", "individuel", "individual", "moral", "moral", "politique", "political", 
+        "personnel", "personal", "absence de contrainte", "absence of constraint", "auto-législation", "self-legislation",
+        "حرية", "استقلال", "إرادة", "اختيار", "سيادة", "تحكم ذاتي", "قهر", "إجبار", "سيطرة", "عبودية", "تحرير", 
+        "حق", "فرد", "قرار", "إرادة الغير", "استقلالية", "تحرر", "التحكم الذاتي", "عدم الخضوع", "non-submission", 
+        "autonomie de la volonté", "autonomy of will", "autarcie", "self-sufficiency", "indépendance personnelle", 
+        "droit de choisir", "right to choose", "responsabilité", "responsibility", "souveraineté individuelle"
+      ]
+    },
+    {
+      "quoteId": 22,
+      "philosopherId": 2,
+      "quote": "Reason alone, not desire or consequence, is the source of moral law",
+      "source": "Groundwork of the Metaphysics of Morals",
+      "category": 8,
+      "categoryName": "Reason and logic",
+      "keywords": [
+        "reason", "raison", "logic", "logique", "moral law", "loi morale", "rational", "rationnel", "rationality", 
+        "rationalité", "thinking", "pensée", "intellect", "ethics", "éthique", "principle", "principe", "objectivity", 
+        "objectivité", "pureté", "purity", "devoir", "duty", "impératif", "imperative", "universalité", "universality", 
+        "a priori", "désir", "desire", "conséquence", "consequence", "sentiment", "feeling", "émotion", "emotion", 
+        "source", "origine", "fondement", "foundation", "maxime", "maxim", "inconditionnel", "unconditional",
+        "عقل", "منطق", "قانون أخلاقي", "عقلاني", "تفكير", "فكر", "أخلاق", "مبدأ", "موضوعية", "نقاء", "واجب", "مصدر", 
+        "أصل", "أساس", "إرادة", "will", "نتيجة", "رغبة", "شعور", "انفعال", "عالمي", "universal", "الاستدلال", "reasoning", 
+        "التحليل", "analysis", "المنطق البحت", "pure logic", "النزاهة", "integrity", "النية", "intention", "أخلاقيات", 
+        "morals", "قانون", "law", "législation morale", "moral legislation", "devoir pur", "pure duty", "rationalisme", "rationalism"
+      ]
+    },
+    {
+      "quoteId": 23,
+      "philosopherId": 2,
+      "quote": "Treat humanity never merely as means but always as an end",
+      "source": "Groundwork of the Metaphysics of Morals",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "universal", "universel", "society", "société", "dignity", "dignité", "humanity", "humanité", "respect", 
+        "ethics", "éthique", "morality", "moralité", "rights", "droits", "equality", "égalité", "fairness", "équité", 
+        "fin en soi", "end in itself", "moyen", "means", "valeur intrinsèque", "intrinsic worth", "personne", "person", 
+        "autonomie", "autonomy", "devoir", "duty", "coopération", "cooperation", "instrumentalisation", "instrumentalization", 
+        "bien commun", "common good", "morale", "moral", "principe", "principle", "obligation", "obligation",
+        "عدالة", "عالمي", "مجتمع", "كرامة", "إنسانية", "احترام", "أخلاق", "قيمة", "حقوق", "مساواة", "إنصاف", "غاية في حد ذاتها", 
+        "وسيلة", "شخص", "تعامل", "treatment", "عدم استغلال", "non-exploitation", "احترام الذات", "self-respect", "قانون أخلاقي", 
+        "moral law", "واجب", "responsabilité", "responsibility", "تعاون", "cooperation", "تقدير", "appreciation", "الأفراد", 
+        "individuals", "مبدأ أساسي", "fundamental principle", "relation", "relation", "éthique relationnelle"
+      ]
+    },
+    {
+      "quoteId": 24,
+      "philosopherId": 2,
+      "quote": "Virtue, not happiness, is the highest good; it alone is unconditional",
+      "source": "Critique of Practical Reason",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "happiness", "bonheur", "virtue", "vertu", "good", "bien", "well-being", "bien-être", "morality", "moralité", 
+        "ethics", "éthique", "unconditional", "inconditionnel", "absolute", "absolu", "ideal", "idéal", "excellence", 
+        "suprême", "supreme", "devoir", "duty", "morale", "moral", "raison", "reason", "but", "purpose", "fin", "end", 
+        "conditionnel", "conditional", "caractère", "character", "perfection", "perfection", "valeur", "value", 
+        "jugement", "judgment", "sagesse", "wisdom", "rigueur", "rigor", "courage", "courage",
+        "سعادة", "فضيلة", "خير", "رفاهية", "أخلاق", "غير مشروط", "مطلق", "مثالي", "تميز", "الأعلى", "واجب", "قيمة", 
+        "شخصية", "كمال", "حكمة", "تعقل", "عقل", "غاية", "شرط", "مشروط", "الأفضل", "the best", "الخير الأسمى", 
+        "highest good", "الخير المطلق", "absolute good", "الاستقامة", "integrity", "نزاهة", "honesty", "قوة d'âme", 
+        "fortitude", "philosophie", "philosophy", "éthique du devoir", "duty ethics", "jugement moral", "moral judgment"
+      ]
+    },
+    {
+      "quoteId": 25,
+      "philosopherId": 2,
+      "quote": "Out of the crooked timber of humanity, no straight thing was ever made",
+      "source": "Idea for a Universal History",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "human nature", "nature humaine", "imperfection", "reality", "réalité", "limitation", "limites", "flaws", "défauts", 
+        "humanity", "humanité", "acceptance", "acceptation", "pragmatism", "pragmatisme", "truth", "vérité", "realism", 
+        "réalisme", "crooked", "tordu", "bois", "timber", "angle", "angle", "défaut", "defect", "erreur", "error", 
+        "condition humaine", "human condition", "réalité", "actuality", "perfection", "perfection", "idéal", "ideal", 
+        "inachevé", "unfinished", "fatalité", "fate", "pêché originel", "original sin", "limites", "constraints",
+        "طبيعة بشرية", "نقص", "واقع", "حدود", "عيوب", "بشرية", "تقبل", "براغماتية", "حقيقة", "واقعية", "خشب", 
+        "اعوجاج", "عوج", "خطأ", "وضع إنساني", "كمال", "مثالية", "عدم استقامة", "crookedness", "فشل", "failure", 
+        "ضعف", "weakness", "صعوبة", "difficulty", "القدر", "destiny", "الشر", "evil", "التاريخ", "history", 
+        "نقص بشري", "human deficiency", "imperfection inhérente", "inherent imperfection", "fatalisme", "fatalism"
+      ]
+    },
+    {
+      "quoteId": 26,
+      "philosopherId": 2,
+      "quote": "Two things fill the mind with wonder: the starry heavens above and the moral law within",
+      "source": "Critique of Practical Reason",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "wisdom", "sagesse", "wonder", "émerveillement", "awe", "admiration", "morality", "moralité", "conscience", 
+        "nature", "universe", "univers", "law", "loi", "ethics", "éthique", "contemplation", "ciel étoilé", "starry heavens", 
+        "loi morale interne", "internal moral law", "sublime", "sublime", "respect", "respect", "esprit", "mind", 
+        "sentiment", "feeling", "infini", "infinity", "grandeur", "grandeur", "ordre", "order", "cosmique", "cosmic", 
+        "interne", "internal", "règles", "rules", "philosophie", "philosophy", "science", "science",
+        "حكمة", "عجب", "إعجاب", "أخلاق", "ضمير", "طبيعة", "كون", "قانون", "تأمل", "سماء مرصعة بالنجوم", "قانون أخلاقي داخلي", 
+        "سامي", "احترام", "عقل", "شعور", "لا نهاية", "عظمة", "نظام", "فلسفة", "علم", "الكون", "inner self", "الذات الداخلية", 
+        "الإحساس", "sensation", "الجمال", "beauty", "الترتيب", "arrangement", "الدهشة", "astonishment", "نظرية", "theory", 
+        "métaphysique", "metaphysics", "loi naturelle", "natural law", "éthique universelle"
+      ]
+    },
+    {
+      "quoteId": 27,
+      "philosopherId": 2,
+      "quote": "He who is cruel to animals becomes hard also in his dealings with men",
+      "source": "Lectures on Ethics",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "ethics", "éthique", "compassion", "cruelty", "cruauté", "kindness", "bonté", "behavior", "comportement", 
+        "character", "caractère", "morality", "moralité", "empathy", "empathie", "humanity", "humanité", "conduct", 
+        "conduite", "animaux", "animals", "traitement", "treatment", "sensibilité", "sensitivity", "violence", "violence", 
+        "insensibilité", "insensitivity", "devoir", "duty", "respect", "respect", "douceur", "gentleness", "relations humaines", 
+        "human relations", "cohérence", "consistency", "cruauté envers les animaux", "animal cruelty", "nature humaine", "human nature",
+        "أخلاق", "رحمة", "قسوة", "لطف", "سلوك", "شخصية", "تعاطف", "إنسانية", "تعامل", "حيوانات", "معاملة", "حساسية", 
+        "عنف", "قسوة القلب", "devoir", "احترام", "علاقات إنسانية", "cohérence", "consistency", "طبيعة", "nature", 
+        "القلب", "heart", "الرأفة", "pity", "العدوانية", "aggression", "التعامل مع الآخرين", "dealing with others", 
+        "éthique animale", "animal ethics", "bien-être animal", "animal welfare", "respect de la vie", "respect for life"
+      ]
+    },
+    {
+      "quoteId": 28,
+      "philosopherId": 2,
+      "quote": "Happiness is not an ideal of reason but of imagination",
+      "source": "Groundwork of the Metaphysics of Morals",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "happiness", "bonheur", "imagination", "reason", "raison", "ideal", "idéal", "well-being", "bien-être", 
+        "contentment", "contentement", "desire", "désir", "aspiration", "feeling", "sentiment", "emotion", "émotion", 
+        "substance", "substance", "nature", "nature", "subjectif", "subjective", "objectif", "objective", 
+        "rationalité", "rationality", "morale", "moral", "rêve", "dream", "vision", "vision", "futur", "future", 
+        "irrationnel", "irrational", "quête", "quest", "satisfaction", "satisfaction",
+        "سعادة", "خيال", "عقل", "مثالي", "رفاهية", "رضا", "رغبة", "طموح", "شعور", "انفعال", "ذاتي", "subjective", 
+        "موضوعي", "objective", "عقلانية", "moralité", "حلم", "رؤية", "مستقبل", "بحث", "إحساس", "sensation", 
+        "الكمال", "perfection", "الغاية", "end", "الرغبة الذاتية", "subjective desire", "الواقع", "reality", 
+        "illusion", "illusion", "spéculation", "speculation", "philosophie", "philosophy", "idéal personnel", 
+        "personal ideal", "nature humaine", "human nature"
+      ]
+    },
+    {
+      "quoteId": 29,
+      "philosopherId": 2,
+      "quote": "All our knowledge begins with the senses, proceeds then to understanding, and ends with reason",
+      "source": "Critique of Pure Reason",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "knowledge", "connaissance", "learning", "apprentissage", "senses", "sens", "understanding", "compréhension", 
+        "reason", "raison", "experience", "expérience", "cognition", "perception", "wisdom", "sagesse", "education", 
+        "éducation", "empirisme", "empiricism", "rationalisme", "rationalism", "processus", "process", "développement", 
+        "development", "esprit", "mind", "analyse", "analysis", "synthèse", "synthesis", "point de départ", "starting point", 
+        "fin", "end", "structure", "structure", "information", "data", "intuition", "intuition", "catégories", "categories",
+        "معرفة", "تعلم", "حواس", "فهم", "عقل", "تجربة", "إدراك", "إحساس", "حكمة", "تعليم", "تفكير", "عملية", "تطور", 
+        "تحليل", "تركيب", "نقطة البداية", "المنطلق", "الغاية", "هيكلة", "بيانات", "حدس", "فئات", "التجريبية", "empirical", 
+        "العقلانية", "rationality", "الفكر", "thought", "المعرفة الحسية", "sensory knowledge", "فهم conceptuel", 
+        "conceptual understanding", "structure de la connaissance", "knowledge structure", "épistémologie", "epistemology"
+      ]
+    },
+    {
+      "quoteId": 30,
+      "philosopherId": 2,
+      "quote": "Morality is not properly the doctrine of how we may make ourselves happy, but how we may make ourselves worthy of happiness",
+      "source": "Critique of Practical Reason",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "morality", "moralité", "ethics", "éthique", "happiness", "bonheur", "worthiness", "dignité", "virtue", "vertu", 
+        "conduct", "conduite", "character", "caractère", "behavior", "comportement", "duty", "devoir", "integrity", 
+        "intégrité", "loi morale", "moral law", "principe", "principle", "obligation", "obligation", "mérite", "merit", 
+        "valeur", "value", "idéal", "ideal", "fin", "end", "condition", "condition", "devoir être", "ought to be", 
+        "mérite du bonheur", "worthiness of happiness", "justice", "justice",
+        "أخلاق", "سعادة", "جدارة", "فضيلة", "سلوك", "شخصية", "واجب", "نزاهة", "قانون أخلاقي", "مبدأ", "إلزام", "استحقاق", 
+        "قيمة", "مثالية", "غاية", "شرط", "الخير الأسمى", "highest good", "العدالة", "justice", "الاستقامة", "integrity", 
+        "العمل الصالح", "good deed", "النية", "intention", "أخلاقي", "ethical", "doctrine", "doctrine", "تعاليم", "teachings", 
+        "vie morale", "moral life", "dignité morale", "moral dignity", "accomplissement", "fulfillment"
+      ]
+    },
+   {
+      "quoteId": 31,
+      "philosopherId": 3,
+      "quote": "There is no eternal wisdom; all truth is perspective",
+      "source": "Beyond Good and Evil",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "perspective", "truth", "vérité", "power", "pouvoir", "wisdom", "sagesse", "relativism", "relativisme", 
+        "interpretation", "interprétation", "viewpoint", "point de vue", "subjectivity", "subjectivité", 
+        "understanding", "compréhension", "context", "contexte", "eternal", "éternel", "absolutism", 
+        "absolutisme", "nihilism", "nihilisme", "knowledge", "connaissance", "epistemology", "épistémologie", 
+        "illusion", "illusion", "multiplicity", "multiplicité", "changement", "change", "fondation", "foundation",
+        "منظور", "حقيقة", "حكمة", "نسبية", "تأويل", "وجهة نظر", "ذاتية", "فهم", "سياق", "أبدي", "إطلاقية", 
+        "عدمية", "معرفة", "وهم", "تعدد", "تغير", "أساس", "نظرة", "رؤية", "vision", "حكم", "judgment", 
+        "dogme", "dogma", "croyance", "belief", "scepticisme", "skepticism", "réalité", "reality", "construction", "construct"
+      ]
+    },
+    {
+      "quoteId": 32,
+      "philosopherId": 3,
+      "quote": "He who has a why to live can bear almost any how",
+      "source": "Twilight of the Idols",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "meaning", "sens", "knowledge", "connaissance", "purpose", "but", "will", "volonté", "endurance", 
+        "suffering", "souffrance", "resilience", "résilience", "motivation", "strength", "force", "understanding", 
+        "compréhension", "existentialism", "existentialisme", "life", "vie", "courage", "courage", "survival", 
+        "survie", "hope", "espoir", "value", "valeur", "drive", "impulsion", "vitality", "vitalité", 
+        "determination", "détermination", "persévérance", "perseverance", "surmonter", "overcome",
+        "معنى", "غاية", "إرادة", "تحمل", "معاناة", "صمود", "مرونة", "دافع", "قوة", "وجود", "حياة", 
+        "شجاعة", "بقاء", "أمل", "قيمة", "إصرار", "مثابرة", "تحمل الألم", "bearing pain", "لماذا", "why", 
+        "كيف", "how", "مغزى الحياة", "meaning of life", "تحدي", "challenge", "تضحية", "sacrifice", 
+        "volonté de vivre", "will to live", "sens de l'existence", "meaning of existence", "connaissance de soi", "self-knowledge"
+      ]
+    },
+    {
+      "quoteId": 33,
+      "philosopherId": 3,
+      "quote": "Good and evil are not fixed; they are created by the strong",
+      "source": "On the Genealogy of Morality",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "good and evil", "bien et mal", "morality", "moralité", "power", "pouvoir", "creation", "création", 
+        "values", "valeurs", "ethics", "éthique", "strength", "force", "determination", "détermination", 
+        "will", "volonté", "philosophy", "philosophie", "master morality", "morale des maîtres", "slave morality", 
+        "morale des esclaves", "convention", "convention", "fixed", "fixe", "revaluation", "réévaluation", 
+        "transvaluation", "transvaluation", "critique", "critique", "société", "society", "comportement", 
+        "behavior", "dépassement", "overcoming", "volonté de puissance", "will to power",
+        "خير وشر", "أخلاق", "قوة", "خلق", "قيم", "فلسفة", "إرادة", "تحديد", "ثابت", "إعادة تقييم", 
+        "نقد", "مجتمع", "سلوك", "تجاوز", "عبودية", "slavery", "هيمنة", "domination", "سلطة", "authority", 
+        "الضعيف", "the weak", "القوي", "the strong", "منظور", "perspective", "دينامique", "dynamic", 
+        "généalogie", "genealogy", "construction sociale", "social construct", "relativisme moral", "moral relativism"
+      ]
+    },
+    {
+      "quoteId": 34,
+      "philosopherId": 3,
+      "quote": "Life is will to power, not a search for happiness or virtue",
+      "source": "Beyond Good and Evil",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "will to power", "volonté de puissance", "human nature", "nature humaine", "life", "vie", "strength", 
+        "force", "drive", "motivation", "ambition", "vitality", "vitalité", "energy", "énergie", "existence", 
+        "happiness", "bonheur", "virtue", "vertu", "search", "recherche", "essence", "essence", "drives", 
+        "pulsions", "expansion", "expansion", "dépassement de soi", "self-overcoming", "cruelty", "cruauté", 
+        "survival", "survie", "agression", "aggression", "affirmation de soi", "self-affirmation", "puissance", "might",
+        "إرادة القوة", "طبيعة بشرية", "حياة", "قوة", "دافع", "طموح", "حيوية", "طاقة", "وجود", "سعادة", 
+        "فضيلة", "بحث", "جوهر", "توسع", "تجاوز الذات", "قسوة", "بقاء", "عدوان", "تأكيد الذات", "سيطرة", "control", 
+        "قوة دافعة", "driving force", "مغزى", "meaning", "الهدف", "aim", "النمو", "growth", "التغلب", "overcoming", 
+        "conflit", "conflict", "lutte", "struggle", "loi de la vie", "law of life"
+      ]
+    },
+    {
+      "quoteId": 35,
+      "philosopherId": 3,
+      "quote": "You must have chaos within to give birth to a dancing star",
+      "source": "Thus Spoke Zarathustra",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "action", "creation", "création", "chaos", "strength", "force", "creativity", "créativité", 
+        "transformation", "energy", "énergie", "power", "pouvoir", "birth", "naissance", "genius", "génie", 
+        "discipline", "discipline", "art", "art", "danse", "dance", "star", "étoile", "désordre", "disorder", 
+        "passion", "passion", "intuition", "intuition", "auto-création", "self-creation", "risque", "risk", 
+        "rupture", "break", "nouveauté", "novelty", "potentiel", "potential", "âme", "soul",
+        "عمل", "خلق", "فوضى", "قوة", "إبداع", "تحول", "طاقة", "ميلاد", "عبقرية", "انضباط", "فن", "نجم", 
+        "اضطراب", "شغف", "حدس", "مخاطرة", "كسر", "جديد", "احتمال", "الذات", "رقص", "dancing", 
+        "التعبير", "expression", "الطموح", "ambition", "التحدي", "challenge", "التحرر", "liberation", 
+        "التجديد", "renewal", "قوة créatrice", "creative power", "artiste", "artist", "au-delà", "beyond"
+      ]
+    },
+    {
+      "quoteId": 36,
+      "philosopherId": 3,
+      "quote": "The powerful create freedom by transcending weakness, not escaping chains",
+      "source": "The Will to Power",
+      "category": 6,
+      "categoryName": "Freedom",
+      "keywords": [
+        "freedom", "liberté", "power", "pouvoir", "self-creation", "création de soi", "strength", "force", 
+        "transcendence", "transcendance", "overcoming", "dépassement", "liberation", "libération", 
+        "independence", "indépendance", "will", "volonté", "autonomy", "autonomie", "weakness", "faiblesse", 
+        "chains", "chaînes", "esclavage", "slavery", "maîtrise", "mastery", "courage", "courage", 
+        "action", "action", "détermination", "determination", "surmonter", "surpass", "potentiel", "potential", 
+        "fatalité", "fate", "choix", "choice",
+        "حرية", "قوة", "خلق الذات", "تجاوز", "تحرير", "استقلال", "إرادة", "استقلال ذاتي", "ضعف", 
+        "قيود", "عبودية", "سيادة", "sovereignty", "شجاعة", "عمل", "إصرار", "إمكانية", "قدر", 
+        "اختيار", "التحرر الداخلي", "internal liberation", "قوة الإرادة", "willpower", "سلطة", "authority", 
+        "العبور", "crossing", "السيطرة", "control", "التمرد", "revolt", "البطولة", "heroism", "تحقيق الذات", "self-fulfillment"
+      ]
+    },
+    {
+      "quoteId": 37,
+      "philosopherId": 3,
+      "quote": "Truths are illusions we forgot are illusions; the strong create truth",
+      "source": "On Truth and Lying",
+      "category": 8,
+      "categoryName": "Reason and logic",
+      "keywords": [
+        "truth", "vérité", "logic", "logique", "illusion", "perspective", "power", "pouvoir", 
+        "interpretation", "interprétation", "relativity", "relativité", "creation", "création", 
+        "philosophy", "philosophie", "knowledge", "connaissance", "language", "langage", "concept", 
+        "concept", "mensonge", "lying", "oubli", "forgetting", "métaphore", "metaphor", "subjectivity", 
+        "subjectivité", "réalité", "reality", "dogme", "dogma", "fondement", "foundation", "erreur", "error",
+        "حقيقة", "منطق", "وهم", "منظور", "قوة", "تأويل", "نسبية", "خلق", "فلسفة", "معرفة", "لغة", 
+        "مفهوم", "كذب", "نسيان", "استعارة", "ذاتية", "واقع", "عقيدة", "أساس", "خطأ", "تكوين", "formation", 
+        "المرء القوي", "the strong man", "المعرفة", "cognition", "البناء", "construction", "التفكير", "thinking", 
+        "القانون", "law", "الحقائق", "facts", "التعميم", "generalization"
+      ]
+    },
+    {
+      "quoteId": 38,
+      "philosopherId": 3,
+      "quote": "Herd morality was created by the weak to suppress the strong",
+      "source": "On the Genealogy of Morality",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "morality", "moralité", "society", "société", "power", "pouvoir", "strength", "force", 
+        "weakness", "faiblesse", "conformity", "conformité", "rebellion", "rébellion", "independence", 
+        "indépendance", "values", "valeurs", "herd", "troupeau", "suppression", "suppression", 
+        "ressentiment", "ressentiment", "égalité", "equality", "démocratie", "democracy", "tyrannie", 
+        "tyranny", "individu", "individual", "masse", "mass", "critique sociale", "social critique", 
+        "médiocrité", "mediocrity", "aristocratie", "aristocracy",
+        "عدالة", "أخلاق", "مجتمع", "قوة", "ضعف", "مطابقة", "تمرد", "استقلال", "قيم", "قطيع", 
+        "قمع", "استياء", "مساواة", "ديمقراطية", "استبداد", "فرد", "نقد اجتماعي", "الخضوع", "submission", 
+        "العامة", "the general public", "النبلاء", "nobles", "السادة", "masters", "العبيد", "slaves", 
+        "التفوق", "superiority", "التنوع", "diversity", "قانون", "law", "قوة", "might", "حكم", "rule"
+      ]
+    },
+    {
+      "quoteId": 39,
+      "philosopherId": 3,
+      "quote": "Happiness is not the aim; excellence and self-overcoming are",
+      "source": "Ecce Homo",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "happiness", "bonheur", "excellence", "self-overcoming", "dépassement de soi", "well-being", 
+        "bien-être", "achievement", "réussite", "greatness", "grandeur", "mastery", "maîtrise", 
+        "transcendence", "transcendance", "strength", "force", "power", "pouvoir", "aim", "but", 
+        "purpose", "objectif", "suffering", "souffrance", "growth", "croissance", "will", "volonté", 
+        "discipline", "discipline", "ascension", "ascension", "challenge", "défi", "autonomie", "autonomy",
+        "سعادة", "تميز", "تجاوز الذات", "رفاهية", "إنجاز", "عظمة", "إتقان", "قوة", "هدف", "غاية", 
+        "معاناة", "نمو", "إرادة", "انضباط", "صعود", "تحدي", "استقلال ذاتي", "قوة الإرادة", "willpower", 
+        "الكمال", "perfection", "الإنجاز", "accomplishment", "الجهد", "effort", "الدافع", "motivation", 
+        "الارتقاء", "elevation", "الانتصار", "victory", "فلسفة الحياة", "philosophy of life", "éthique"
+      ]
+    },
+    {
+      "quoteId": 40,
+      "philosopherId": 3,
+      "quote": "That which does not kill us makes us stronger",
+      "source": "Twilight of the Idols",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "strength", "force", "resilience", "résilience", "adversity", "adversité", "growth", "croissance", 
+        "power", "pouvoir", "endurance", "suffering", "souffrance", "overcoming", "dépassement", 
+        "discipline", "fortitude", "force d'âme", "challenge", "défi", "pain", "douleur", "survival", 
+        "survie", "transformation", "transformation", "resistance", "résistance", "expérience", 
+        "experience", "leçon", "lesson", "volonté", "will", "vitalité", "vitality", "détermination", "determination",
+        "قوة", "مرونة", "شدة", "محنة", "نمو", "تحمل", "معاناة", "تجاوز", "انضباط", "شجاعة", "تحدي", 
+        "ألم", "بقاء", "تحول", "مقاومة", "تجربة", "درس", "إرادة", "حيوية", "إصرار", "صعوبة", "difficulty", 
+        "بناء الذات", "self-building", "الصلابة", "toughness", "المنعة", "immunity", "التغلب على المحن", 
+        "overcoming hardship", "البقاء للأقوى", "survival of the fittest", "croissance personnelle", "personal growth"
+      ]
+    },
+    {
+      "quoteId": 41,
+      "philosopherId": 3,
+      "quote": "Become who you are",
+      "source": "Thus Spoke Zarathustra",
+      "category": 6,
+      "categoryName": "Freedom",
+      "keywords": [
+        "freedom", "liberté", "authenticity", "authenticité", "self-realization", "réalisation de soi", 
+        "identity", "identité", "individuality", "individualité", "potential", "potentiel", "becoming", 
+        "devenir", "self-creation", "création de soi", "destiny", "destin", "purpose", "but", "will", 
+        "volonté", "autonomy", "autonomie", "essence", "essence", "être", "being", "transformation", 
+        "transformation", "choix", "choice", "personnel", "personal", "exigence", "demand", "vie", "life",
+        "حرية", "أصالة", "تحقيق الذات", "هوية", "فردية", "إمكانية", "صيرورة", "خلق الذات", "مصير", 
+        "غاية", "إرادة", "استقلال ذاتي", "جوهر", "كينونة", "تحول", "اختيار", "شخصي", "متطلب", "حياة", 
+        "التعبير", "expression", "الوجود", "existence", "النمو", "growth", "الذات الحقيقية", "true self", 
+        "التحرر", "liberation", "الإمكان", "possibility", "دعوة", "calling", "volonté de puissance", "will to power"
+      ]
+    },
+    {
+      "quoteId": 42,
+      "philosopherId": 3,
+      "quote": "The individual has always had to struggle to keep from being overwhelmed by the tribe",
+      "source": "Beyond Good and Evil",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "individuality", "individualité", "society", "société", "conformity", "conformité", 
+        "independence", "indépendance", "rebellion", "rébellion", "freedom", "liberté", 
+        "autonomy", "autonomie", "self", "soi", "struggle", "lutte", "resistance", "résistance", 
+        "mass", "masse", "tribe", "tribu", "overwhelmed", "submergé", "oppression", "oppression", 
+        "non-conformity", "non-conformité", "courage", "courage", "valeur", "value", "solitude", "solitude", 
+        "justice", "justice", "norme", "norm",
+        "فردية", "مجتمع", "مطابقة", "استقلال", "تمرد", "حرية", "استقلال ذاتي", "صراع", "مقاومة", 
+        "جماعة", "قبيلة", "قمع", "عدم امتثال", "شجاعة", "قيمة", "وحدة", "عدالة", "قاعدة", 
+        "الاكتساح", "overwhelming", "الذات", "self", "التفرد", "uniqueness", "التميز", "distinction", 
+        "السلطة", "authority", "الضغط", "pressure", "حماية", "protection", "التحرر الاجتماعي", "social liberation"
+      ]
+    },
+    {
+      "quoteId": 43,
+      "philosopherId": 3,
+      "quote": "The thought of self-destruction is a powerful comfort; it helps one through many a bad night",
+      "source": "Beyond Good and Evil",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "life", "vie", "death", "mort", "comfort", "réconfort", "human nature", "nature humaine", 
+        "psychology", "psychologie", "suffering", "souffrance", "escape", "évasion", "relief", 
+        "soulagement", "existence", "reality", "réalité", "self-destruction", "auto-destruction", 
+        "nihilism", "nihilisme", "despair", "désespoir", "hope", "espoir", "darkness", "obscurité", 
+        "power", "pouvoir", "contrôle", "control", "pensée", "thought", "crise", "crisis",
+        "حياة", "موت", "راحة", "طبيعة بشرية", "علم النفس", "معاناة", "هروب", "تخفيف", "وجود", 
+        "واقع", "تدمير الذات", "عدمية", "يأس", "أمل", "ظلام", "قوة", "تحكم", "فكرة", "أزمة", 
+        "الليل", "night", "الحل", "solution", "الشدة", "intensity", "النجاة", "salvation", 
+        "الهروب من الألم", "escape from pain", "الخيار", "choice", "السيادة", "sovereignty", "angoisse", "anxiety"
+      ]
+    },
+    {
+      "quoteId": 44,
+      "philosopherId": 3,
+      "quote": "All truly great thoughts are conceived while walking",
+      "source": "Twilight of the Idols",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "thinking", "pensée", "knowledge", "connaissance", "creativity", "créativité", "movement", 
+        "mouvement", "contemplation", "inspiration", "philosophy", "philosophie", "insight", 
+        "perspicacité", "wisdom", "sagesse", "learning", "apprentissage", "greatness", "grandeur", 
+        "idea", "idée", "walk", "marche", "physicality", "physicalité", "esprit", "mind", "corps", 
+        "body", "concentration", "concentration", "méditation", "meditation", "connexion", "connection",
+        "تفكير", "معرفة", "إبداع", "حركة", "تأمل", "إلهام", "فلسفة", "حكمة", "تعلم", "عظمة", "فكرة", 
+        "مش ي", "جسدية", "عقل", "جسد", "تركيز", "اتصال", "الخارج", "outside", "العبقرية", "genius", 
+        "الخطو", "stepping", "الصفاء", "clarity", "الوضوح", "lucidity", "التحرر", "liberation", 
+        "idéation", "ideation", "la grande idée", "the great idea", "méditation en marchant", "walking meditation"
+      ]
+    },
+    {
+      "quoteId": 45,
+      "philosopherId": 3,
+      "quote": "In individuals, insanity is rare; but in groups, parties, nations, it is the rule",
+      "source": "Beyond Good and Evil",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "society", "société", "collective", "collectif", "madness", "folie", "groups", "groupes", 
+        "crowds", "foules", "conformity", "conformité", "irrationality", "irrationalité", 
+        "humanity", "humanité", "psychology", "psychologie", "observation", "individu", "individual", 
+        "nation", "nation", "politique", "politics", "rule", "règle", "rationality", "rationalité", 
+        "masse", "mass", "danger", "danger", "tyranny", "tyrannie", "critique", "critique", "histoire", "history",
+        "مجتمع", "جماعي", "جنون", "مجموعات", "حشود", "مطابقة", "لا عقلانية", "إنسانية", "علم النفس", 
+        "ملاحظة", "فرد", "دولة", "سياسة", "قاعدة", "عقلانية", "خطر", "نقد", "تاريخ", "الفردية", 
+        "individuality", "الجنون الجماعي", "mass insanity", "التعصب", "fanaticism", "الخضوع", "submission", 
+        "التحيز", "bias", "القطيع", "herd", "الحزب", "party", "قانون", "law", "الاستثناء", "exception"
+      ]
+    },
+
+
+    {
+      "quoteId": 46,
+      "philosopherId": 4,
+      "quote": "The soul is healed by being with children and simple hearts",
+      "source": "The Brothers Karamazov",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "soul", "âme", "innocence", "wisdom", "sagesse", "healing", "guérison", "simplicity", 
+        "simplicité", "purity", "pureté", "children", "enfants", "peace", "paix", "restoration", 
+        "réparation", "comfort", "réconfort", "spiritual", "spirituel", "heart", "cœur", 
+        "faith", "foi", "love", "amour", "humanity", "humanité", "redemption", "rédemption", 
+        "authenticité", "authenticity", "nature", "nature", "truth", "vérité", "contemplation", "contemplation",
+        "روح", "براءة", "حكمة", "شفاء", "بساطة", "نقاء", "أطفال", "سلام", "استعادة", "راحة", 
+        "روحي", "قلب", "إيمان", "حب", "إنسانية", "فداء", "أصالة", "طبيعة", "حقيقة", "تأمل", 
+        "السكينة", "serenity", "الطهارة", "cleanliness", "البراءة الطفولية", "childlike innocence", 
+        "العلاج", "therapy", "الخير", "goodness", "الخلاص", "salvation", "التعاطف", "empathy", 
+        "الصدق", "honesty", "الإخلاص", "sincerity"
+      ]
+    },
+    {
+      "quoteId": 47,
+      "philosopherId": 4,
+      "quote": "Pain and suffering are always inevitable for a large intelligence",
+      "source": "Crime and Punishment",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "suffering", "souffrance", "intelligence", "knowledge", "connaissance", "pain", "douleur", 
+        "awareness", "conscience", "consciousness", "understanding", "compréhension", "wisdom", 
+        "sagesse", "depth", "profondeur", "sensitivity", "sensibilité", "inevitable", "inévitable", 
+        "greatness", "grandeur", "burden", "fardeau", "curse", "malédiction", "thought", "pensée", 
+        "existential", "existentiel", "existence", "existence", "solitude", "solitude", "tragedy", "tragédie",
+        "معاناة", "ذكاء", "معرفة", "ألم", "وعي", "إدراك", "فهم", "حكمة", "عمق", "حساسية", 
+        "حتمي", "عظمة", "عبء", "لعنة", "فكر", "وجودي", "وجود", "وحدة", "مأساة", "النضج", "maturity", 
+        "العبقرية", "genius", "العقل", "mind", "الإدراك العميق", "deep realization", "الحقيقة", "truth", 
+        "التعقيد", "complexity", "العزلة", "isolation", "القدر", "fate", "tourment", "torment"
+      ]
+    },
+    {
+      "quoteId": 48,
+      "philosopherId": 4,
+      "quote": "Man is a mystery; if you spend your life solving it, your time is not wasted",
+      "source": "Letter to his brother",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "mystery", "mystère", "human nature", "nature humaine", "life", "vie", "purpose", "but", 
+        "understanding", "compréhension", "exploration", "psychology", "psychologie", "depth", 
+        "profondeur", "meaning", "sens", "quest", "quête", "waste", "gaspillage", "time", "temps", 
+        "search", "recherche", "essence", "essence", "existence", "existence", "self", "soi", 
+        "science", "science", "philosophie", "philosophy", "worth", "valeur", "inconnu", "unknown",
+        "لغز", "سر", "طبيعة بشرية", "حياة", "غاية", "فهم", "استكشاف", "علم النفس", "عمق", "معنى", 
+        "بحث", "هدر", "وقت", "جوهر", "وجود", "ذات", "قيمة", "مجهول", "حل", "solving", 
+        "جهد", "effort", "استثمار", "investment", "بصيرة", "insight", "فهم الذات", "self-understanding", 
+        "التعقيد البشري", "human complexity", "الروح", "soul", "السعي", "pursuit", "الحقيقة الإنسانية", "human truth"
+      ]
+    },
+    {
+      "quoteId": 49,
+      "philosopherId": 4,
+      "quote": "Taking a new step, uttering a new word, is what people fear most",
+      "source": "Crime and Punishment",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "action", "fear", "peur", "courage", "change", "changement", "risk", "risque", "boldness", 
+        "audace", "initiative", "innovation", "transformation", "growth", "croissance", "new", "nouveau", 
+        "step", "pas", "word", "mot", "society", "société", "conformity", "conformité", "judgment", 
+        "jugement", "insecurity", "insécurité", "stagnation", "stagnation", "discipline", "discipline",
+        "عمل", "خوف", "شجاعة", "تغيير", "مخاطرة", "جرأة", "مبادرة", "ابتكار", "تحول", "نمو", "جديد", 
+        "خطوة", "كلمة", "مجتمع", "مطابقة", "حكم", "عدم أمان", "ركود", "انضباط", "تعبير", "expression", 
+        "الحديث", "speaking", "المجازفة", "gambling", "التحدي", "challenge", "المقاومة", "resistance", 
+        "الخروج عن المألوف", "breaking the norm", "الشجاعة المدنية", "civic courage", "lancement", "launch"
+      ]
+    },
+    {
+      "quoteId": 50,
+      "philosopherId": 4,
+      "quote": "Man has such a predilection for systems that he will distort truth to fit them",
+      "source": "Notes from Underground",
+      "category": 6,
+      "categoryName": "Freedom",
+      "keywords": [
+        "freedom", "liberté", "systems", "systèmes", "truth", "vérité", "rebellion", "rébellion", 
+        "conformity", "conformité", "authenticity", "authenticité", "independence", "indépendance", 
+        "thinking", "pensée", "reality", "réalité", "distortion", "distorsion", "rationality", 
+        "rationalité", "desire", "désir", "will", "volonté", "control", "contrôle", "ideal", "idéal", 
+        "human nature", "nature humaine", "dogmatism", "dogmatisme", "individualism", "individualisme",
+        "حرية", "أنظمة", "حقيقة", "تمرد", "مطابقة", "أصالة", "استقلال", "تفكير", "واقع", "تشويه", 
+        "عقلانية", "رغبة", "إرادة", "تحكم", "مثالي", "طبيعة بشرية", "دوغمائية", "فردية", 
+        "الانحراف", "deviation", "الخضوع", "submission", "التكيف", "adaptation", "العناد", "obstinacy", 
+        "نظام", "order", "الإكراه", "coercion", "التعقيد", "complexity", "l'homme souterrain", "underground man"
+      ]
+    },
+   {
+      "quoteId": 51,
+      "philosopherId": 4,
+      "quote": "Reason alone cannot comprehend life; the heart knows what reason cannot",
+      "source": "The Brothers Karamazov",
+      "category": 8,
+      "categoryName": "Reason and logic",
+      "keywords": [
+        "reason", "raison", "heart", "cœur", "logic", "logique", "understanding", "compréhension", 
+        "emotion", "émotion", "intuition", "knowledge", "connaissance", "wisdom", "sagesse", 
+        "feeling", "sentiment", "comprehension", "life", "vie", "rationalism", "rationalisme", 
+        "irrationality", "irrationalité", "spirit", "esprit", "faith", "foi", "mystery", "mystère", 
+        "existence", "existence", "truth", "vérité", "limitation", "limitation", "depth", "profondeur", 
+        "experience", "expérience", "humanity", "humanité", "innate", "inné", "subjectivity", "subjectivité",
+        "عقل", "قلب", "منطق", "فهم", "عاطفة", "حدس", "معرفة", "حكمة", "شعور", "حياة", "عقلانية", 
+        "لا عقلانية", "روح", "إيمان", "سر", "وجود", "حقيقة", "قصور", "عمق", "تجربة", "إنسانية", 
+        "فطري", "ذاتية", "القلب والمنطق", "heart and logic", "الإدراك", "perception", "البصيرة", "insight", 
+        "التفكير", "thinking", "الإحساس", "sensation", "التعاطف", "empathy", "الوعي", "awareness", "الذات", "self"
+      ]
+    },
+    {
+      "quoteId": 52,
+      "philosopherId": 4,
+      "quote": "The degree of civilization is measured by how it treats its weakest",
+      "source": "The House of the Dead",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "civilization", "civilisation", "society", "société", "weakness", "faiblesse", 
+        "compassion", "humanity", "humanité", "ethics", "éthique", "morality", "moralité", 
+        "treatment", "traitement", "measure", "mesure", "poverty", "pauvreté", "vulnerability", 
+        "vulnérabilité", "care", "soin", "empathy", "empathie", "equality", "égalité", "dignity", 
+        "dignité", "test", "épreuve", "law", "loi", "responsibility", "responsabilité", "progress", 
+        "progrès", "value", "valeur", "injustice", "injustice",
+        "عدالة", "حضارة", "مجتمع", "ضعف", "شفقة", "إنسانية", "أخلاق", "معاملة", "قياس", "فقر", 
+        "هشاشة", "رعاية", "تعاطف", "مساواة", "كرامة", "اختبار", "مسؤولية", "تقدم", "قيمة", 
+        "ظلم", "الرحمة", "mercy", "الفئات الضعيفة", "the vulnerable", "المجتمع", "community", 
+        "الإصلاح", "reform", "السلوك", "conduct", "المبادئ", "principles", "الحق", "right", "الدولة", "state"
+      ]
+    },
+    {
+      "quoteId": 53,
+      "philosopherId": 4,
+      "quote": "Suffering is the origin of consciousness and the path to redemption",
+      "source": "Notes from Underground",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "suffering", "souffrance", "consciousness", "conscience", "redemption", "rédemption", 
+        "happiness", "bonheur", "awareness", "transformation", "growth", "croissance", 
+        "understanding", "compréhension", "enlightenment", "illumination", "healing", "guérison", 
+        "pain", "douleur", "origin", "origine", "path", "chemin", "spirituality", "spiritualité", 
+        "existentialism", "existentialisme", "sacrifice", "sacrifice", "purity", "pureté", 
+        "self-knowledge", "connaissance de soi", "development", "développement", "meaning", "sens",
+        "معاناة", "وعي", "فداء", "خلاص", "سعادة", "تحول", "نمو", "فهم", "تنوير", "شفاء", "ألم", 
+        "أصل", "طريق", "روحانية", "وجودية", "تضحية", "نقاء", "تطور", "معنى", "اليقظة", "awakening", 
+        "البصيرة", "insight", "العذاب", "torment", "التوبة", "repentance", "الارتقاء", "elevation", 
+        "الحقيقة", "truth", "الذات", "self", "الكمال", "perfection"
+      ]
+    },
+    {
+      "quoteId": 54,
+      "philosopherId": 4,
+      "quote": "To love someone means to see them as the infinite intended them",
+      "source": "The Brothers Karamazov",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "love", "amour", "ethics", "éthique", "compassion", "acceptance", "acceptation", 
+        "understanding", "compréhension", "empathy", "empathie", "humanity", "humanité", 
+        "relationship", "relation", "care", "soin", "kindness", "bonté", "infinite", "infini", 
+        "intended", "destiné", "vision", "vision", "idealism", "idéalisme", "spiritual", "spirituel", 
+        "dignity", "dignité", "soul", "âme", "respect", "respect", "purity", "pureté", 
+        "potential", "potentiel", "faith", "foi", "creator", "créateur",
+        "حب", "أخلاق", "شفقة", "قبول", "فهم", "تعاطف", "إنسانية", "علاقة", "رعاية", "لطف", 
+        "لا نهائي", "مقصود", "رؤية", "مثالية", "روحي", "كرامة", "روح", "احترام", "نقاء", 
+        "إمكانية", "إيمان", "خالق", "الهدف", "purpose", "الإلهي", "divine", "الجمال", "beauty", 
+        "التسامح", "tolerance", "السلوك", "behavior", "العمق", "depth", "الاهتمام", "attention", "جوهر", "essence"
+      ]
+    },
+    {
+      "quoteId": 55,
+      "philosopherId": 4,
+      "quote": "The mystery of human existence lies not in just staying alive, but in finding something to live for",
+      "source": "The Brothers Karamazov",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "existence", "life", "vie", "meaning", "sens", "purpose", "but", "motivation", 
+        "survival", "survie", "living", "human nature", "nature humaine", "quest", "quête", 
+        "fulfillment", "accomplissement", "mystery", "mystère", "value", "valeur", 
+        "will", "volonté", "drive", "impulsion", "essential", "essentiel", "search", "recherche", 
+        "spiritual", "spirituel", "philosophical", "philosophique", "goal", "objectif", "reason", "raison",
+        "وجود", "حياة", "معنى", "غاية", "دافع", "بقاء", "طبيعة بشرية", "سعي", "تحقيق", "لغز", 
+        "قيمة", "إرادة", "جوهري", "بحث", "روحي", "فلسفي", "هدف", "سبب", "الوجود البشري", 
+        "human existence", "السر", "secret", "الهدف الأسمى", "ultimate purpose", "الرسالة", "mission", 
+        "المسؤولية", "responsibility", "الإثراء", "enrichment", "العمق", "depth", "الجودة", "quality"
+      ]
+    },
+    {
+      "quoteId": 56,
+      "philosopherId": 4,
+      "quote": "Above all, don't lie to yourself",
+      "source": "The Brothers Karamazov",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "wisdom", "sagesse", "honesty", "honnêteté", "truth", "vérité", "self-awareness", 
+        "conscience de soi", "integrity", "intégrité", "authenticity", "authenticité", 
+        "deception", "tromperie", "reality", "réalité", "consciousness", "conscience", 
+        "sincerity", "sincérité", "self-deception", "auto-tromperie", "courage", "courage", 
+        "virtue", "vertu", "foundation", "fondation", "psychology", "psychologie", 
+        "responsibility", "responsabilité", "self-respect", "respect de soi", "knowledge", "connaissance",
+        "حكمة", "صدق", "حقيقة", "وعي ذاتي", "نزاهة", "أصالة", "خداع", "واقع", "وعي", "إخلاص", 
+        "النفاق", "hypocrisy", "شجاعة", "فضيلة", "أساس", "علم النفس", "مسؤولية", "احترام الذات", 
+        "معرفة", "الذات", "self", "التأمل", "introspection", "النور", "light", "الظلام", "darkness", 
+        "الوضوح", "clarity", "الاستقامة", "rectitude", "المبادئ", "principles", "البحث عن الذات", "self-search"
+      ]
+    },
+    {
+      "quoteId": 57,
+      "philosopherId": 4,
+      "quote": "The greatest happiness is to know the source of unhappiness",
+      "source": "Notes from Underground",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "happiness", "bonheur", "unhappiness", "malheur", "awareness", "conscience", 
+        "understanding", "compréhension", "knowledge", "connaissance", "wisdom", "sagesse", 
+        "consciousness", "insight", "perspicacité", "truth", "vérité", "realization", 
+        "prise de conscience", "source", "origine", "cause", "cause", "emancipation", "émancipation", 
+        "freedom", "liberté", "self-mastery", "maîtrise de soi", "psychology", "psychologie", 
+        "relief", "soulagement", "path", "chemin", "suffering", "souffrance", "cure", "remède",
+        "سعادة", "تعاسة", "وعي", "فهم", "معرفة", "حكمة", "بصيرة", "حقيقة", "إدراك", "مصدر", 
+        "سبب", "تحرر", "حرية", "تحكم ذاتي", "علم النفس", "راحة", "طريق", "معاناة", "علاج", 
+        "التحليل", "analysis", "الشفاء", "healing", "العمق", "depth", "الوجود", "existence", 
+        "الإستنارة", "enlightenment", "النمو", "growth", "التعلم", "learning", "القوة", "power"
+      ]
+    },
+    {
+      "quoteId": 58,
+      "philosopherId": 4,
+      "quote": "We sometimes encounter people, even perfect strangers, who interest us at first sight, before a word has been spoken",
+      "source": "Crime and Punishment",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "connection", "connexion", "human nature", "nature humaine", "intuition", "relationship", 
+        "relation", "attraction", "understanding", "compréhension", "recognition", "reconnaissance", 
+        "soul", "âme", "affinity", "affinité", "empathy", "empathie", "stranger", "étranger", 
+        "first sight", "premier regard", "mystery", "mystère", "communication", "communication", 
+        "spirit", "esprit", "destiny", "destin", "unspoken", "non-dit", "psychology", "psychologie", 
+        "bond", "lien", "fatalism", "fatalisme", "chemistry", "chimie",
+        "اتصال", "طبيعة بشرية", "حدس", "علاقة", "جاذبية", "فهم", "اعتراف", "روح", "تآلف", "تعاطف", 
+        "غريب", "نظرة أولى", "سر", "تواصل", "قدر", "غير منطوق", "علم النفس", "رابط", "كيمياء", 
+        "الارتباط", "bonding", "الإهتمام", "interest", "التفاعل", "interaction", "العمق", "depth", 
+        "الشعور", "feeling", "البصيرة", "insight", "التقاء الأرواح", "meeting of souls", "اللحظة", "moment"
+      ]
+    },
+    {
+      "quoteId": 59,
+      "philosopherId": 4,
+      "quote": "Nothing is easier than to denounce the evildoer; nothing harder than to understand him",
+      "source": "The Idiot",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "understanding", "compréhension", "compassion", "judgment", "jugement", 
+        "empathy", "empathie", "morality", "moralité", "ethics", "éthique", "humanity", "humanité", 
+        "forgiveness", "pardon", "wisdom", "sagesse", "evildoer", "malfaiteur", "denounce", 
+        "dénoncer", "difficulty", "difficulté", "complexity", "complexité", "psychology", 
+        "psychologie", "crime", "crime", "good and evil", "bien et mal", "tolerance", "tolérance", 
+        "critique", "critique", "behavior", "comportement", "sin", "péché",
+        "عدالة", "فهم", "شفقة", "حكم", "تعاطف", "أخلاق", "إنسانية", "تسامح", "حكمة", "المسيء", 
+        "شجب", "صعوبة", "تعقيد", "علم النفس", "جرم", "خير وشر", "نقد", "سلوك", "خطيئة", 
+        "التدين", "piety", "الرحمة", "mercy", "الدوافع", "motives", "السطحية", "superficiality", 
+        "العمق البشري", "human depth", "التعقيد الأخلاقي", "moral complexity", "القسوة", "cruelty", "الشر", "evil"
+      ]
+    },
+    {
+      "quoteId": 60,
+      "philosopherId": 4,
+      "quote": "Realists do not fear the results of their study",
+      "source": "Notes from Underground",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "realism", "réalisme", "truth", "vérité", "courage", "knowledge", "connaissance", 
+        "learning", "apprentissage", "inquiry", "enquête", "honesty", "honnêteté", "study", 
+        "étude", "fearlessness", "intrépidité", "investigation", "results", "résultats", 
+        "science", "science", "objectivity", "objectivité", "integrity", "intégrité", 
+        "rationality", "rationalité", "mind", "esprit", "acceptance", "acceptation", 
+        "self-deception", "auto-tromperie", "confrontation", "confrontation", "fact", "fait",
+        "واقعية", "حقيقة", "شجاعة", "معرفة", "تعلم", "تحقيق", "صدق", "دراسة", "جردة", "تحري", 
+        "نتائج", "علم", "موضوعية", "نزاهة", "عقلانية", "عقل", "قبول", "مواجهة", "حقيقة", 
+        "البحث", "search", "عدم الخوف", "lack of fear", "الوضوح", "clarity", "الجرأة", "boldness", 
+        "الإدراك", "perception", "المعرفة", "cognition", "فلسفة", "philosophy", "التحرر", "liberation"
+      ]
+    },
+    {
+      "quoteId": 61,
+      "philosopherId": 5,
+      "quote": "The only true wisdom is knowing that you know nothing of importance",
+      "source": "War and Peace",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "wisdom", "sagesse", "humility", "humilité", "knowledge", "connaissance", "ignorance", 
+        "modesty", "modestie", "understanding", "compréhension", "learning", "apprentissage", 
+        "awareness", "conscience", "simplicity", "simplicité", "truth", "vérité", 
+        "epistemology", "épistémologie", "self-knowledge", "connaissance de soi", "limitation", 
+        "limitation", "skepticism", "scepticisme", "philosophy", "philosophie", "importance", 
+        "importance", "certainty", "certitude", "perspective", "perspective", "doubt", "doute", 
+        "introspection", "introspection", "socratic", "socratique",
+        "حكمة", "تواضع", "معرفة", "جهل", "فهم", "تعلم", "وعي", "بساطة", "حقيقة", "إبستيمولوجيا", 
+        "حد", "شك", "فلسفة", "أهمية", "يقين", "منظور", "تأمل", "سقراطي", "عدم اليقين", 
+        "uncertainty", "العمق", "depth", "الإدراك", "realization", "الجهل المقدس", "sacred ignorance", 
+        "البحث", "search", "التواضع الفكري", "intellectual humility", "الحدود", "limits", "الذات", "self"
+      ]
+    },
+    {
+      "quoteId": 62,
+      "philosopherId": 5,
+      "quote": "The only thing we can know is that we know nothing, and that is wisdom",
+      "source": "War and Peace",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "knowledge", "connaissance", "learning", "apprentissage", "humility", "humilité", 
+        "limits", "limites", "wisdom", "sagesse", "understanding", "compréhension", "awareness", 
+        "conscience", "ignorance", "philosophy", "philosophie", "insight", "perspicacité", 
+        "truth", "vérité", "certainty", "certitude", "doubt", "doute", "skepticism", "scepticisme", 
+        "epistemology", "épistémologie", "self-awareness", "conscience de soi", "realization", 
+        "réalisation", "intellectual", "intellectuel", "search", "recherche", "simplicity", "simplicité",
+        "معرفة", "تعلم", "تواضع", "حدود", "حكمة", "فهم", "وعي", "جهل", "فلسفة", "بصيرة", 
+        "حقيقة", "يقين", "شك", "إبستيمولوجيا", "إدراك", "عقلي", "بحث", "بساطة", "الذات", "self", 
+        "الحكمة الحقيقية", "true wisdom", "الاعتراف", "recognition", "النفي", "negation", 
+        "الشك المنهجي", "methodological doubt", "العمق", "depth", "السعي", "pursuit", "التفكير", "thinking"
+      ]
+    },
+    {
+      "quoteId": 63,
+      "philosopherId": 5,
+      "quote": "Wrong does not cease to be wrong because the majority share in it",
+      "source": "A Confession",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "ethics", "éthique", "wrong", "mal", "majority", "majorité", "conscience", "morality", 
+        "moralité", "principle", "principe", "integrity", "intégrité", "right", "bien", 
+        "truth", "vérité", "conviction", "conformity", "conformité", "individualism", 
+        "individualisme", "justice", "justice", "courage", "courage", "independence", 
+        "indépendance", "tyranny", "tyrannie", "social pressure", "pression sociale", 
+        "value", "valeur", "duty", "devoir", "law", "loi",
+        "أخلاق", "خطأ", "أغلبية", "ضمير", "مبدأ", "نزاهة", "صواب", "حقيقة", "قناعة", "مطابقة", 
+        "فردية", "عدالة", "شجاعة", "استقلال", "طغيان", "ضغط اجتماعي", "قيمة", "واجب", "قانون", 
+        "الصواب والخطأ", "right and wrong", "الثبات", "steadfastness", "التمرد", "rebellion", 
+        "المسؤولية", "responsibility", "الحكم الذاتي", "self-rule", "الأخلاق الشخصية", "personal ethics", 
+        "الضمير", "conscience", "المقاومة", "resistance"
+      ]
+    },
+    {
+      "quoteId": 64,
+      "philosopherId": 5,
+      "quote": "All happy families resemble one another; each unhappy family is unhappy in its own way",
+      "source": "Anna Karenina",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "family", "famille", "happiness", "bonheur", "human nature", "nature humaine", 
+        "life", "vie", "relationships", "relations", "uniqueness", "unicité", "suffering", 
+        "souffrance", "individuality", "individualité", "patterns", "modèles", "psychology", 
+        "psychologie", "similarity", "similarité", "difference", "différence", "tragedy", 
+        "tragédie", "normality", "normalité", "chaos", "chaos", "order", "ordre", 
+        "well-being", "bien-être", "universality", "universalité",
+        "عائلة", "سعادة", "طبيعة بشرية", "حياة", "علاقات", "تفرد", "معاناة", "فردية", 
+        "أنماط", "علم النفس", "تشابه", "اختلاف", "مأساة", "نظام", "رفاهية", "عالمية", 
+        "الفرح", "joy", "الحزن", "sadness", "الزواج", "marriage", "التوافق", "compatibility", 
+        "الاضطراب", "disorder", "الهدوء", "calm", "التعقيد", "complexity", "الحياة الأسرية", "family life"
+      ]
+    },
+    {
+      "quoteId": 65,
+      "philosopherId": 5,
+      "quote": "Everyone thinks of changing the world, but no one thinks of changing himself",
+      "source": "Three Methods of Reform",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "change", "changement", "self", "soi", "action", "discipline", "improvement", 
+        "amélioration", "transformation", "responsibility", "responsabilité", "growth", 
+        "croissance", "reform", "réforme", "personal", "personnel", "world", "monde", 
+        "hypocrisy", "hypocrisie", "introspection", "introspection", "effort", "effort", 
+        "will", "volonté", "laziness", "paresse", "critique", "critique", "idealism", "idéalisme", 
+        "pragmatism", "pragmatisme", "challenge", "défi",
+        "تغيير", "ذات", "عمل", "انضباط", "تحسين", "تحول", "مسؤولية", "نمو", "إصلاح", 
+        "شخصي", "عالم", "نفاق", "تأمل", "جهد", "إرادة", "كسل", "نقد", "مثالية", "تحدي", 
+        "الذاتية", "subjectivity", "البداية", "beginning", "التركيز", "focus", "التنمية", "development", 
+        "الإنجاز", "achievement", "السلوك", "behavior", "الواجب", "duty", "الإرادة", "willpower"
+      ]
+    },
+    {
+      "quoteId": 66,
+      "philosopherId": 5,
+      "quote": "True freedom is found in simplicity and renouncing the false needs of society",
+      "source": "The Kingdom of God Is Within You",
+      "category": 6,
+      "categoryName": "Freedom",
+      "keywords": [
+        "freedom", "liberté", "simplicity", "simplicité", "renunciation", "renoncement", 
+        "society", "société", "liberation", "libération", "independence", "indépendance", 
+        "authenticity", "authenticité", "minimalism", "minimalisme", "truth", "vérité", 
+        "peace", "paix", "needs", "besoins", "materialism", "matérialisme", "spiritual", 
+        "spirituel", "autonomy", "autonomie", "consumerism", "consumérisme", "choice", "choix", 
+        "happiness", "bonheur", "self-control", "maîtrise de soi", "purity", "pureté",
+        "حرية", "بساطة", "تخلي", "مجتمع", "تحرر", "استقلال", "أصالة", "حد أدنى", "حقيقة", 
+        "سلام", "حاجة", "مادية", "روحي", "استقلال ذاتي", "استهلاك", "اختيار", "سعادة", 
+        "التحكم الذاتي", "نقاء", "الحرية الحقيقية", "true freedom", "الاكتفاء", "sufficiency", 
+        "التحرر من القيود", "liberation from constraints", "الزهد", "asceticism", "القيمة", "value", 
+        "الذات", "self", "الحياة", "life"
+      ]
+    },
+    {
+      "quoteId": 67,
+      "philosopherId": 5,
+      "quote": "Pure reason can establish nothing; only love reveals the truth of life",
+      "source": "A Confession",
+      "category": 8,
+      "categoryName": "Reason and logic",
+      "keywords": [
+        "reason", "raison", "love", "amour", "truth", "vérité", "logic", "logique", 
+        "understanding", "compréhension", "heart", "cœur", "wisdom", "sagesse", "knowledge", 
+        "connaissance", "emotion", "émotion", "insight", "perspicacité", "life", "vie", 
+        "revelation", "révélation", "spiritual", "spirituel", "faith", "foi", "rationalism", 
+        "rationalisme", "existential", "existentiel", "meaning", "sens", "pure", "pur", 
+        "foundation", "fondement", "reality", "réalité",
+        "عقل", "حب", "حقيقة", "منطق", "فهم", "قلب", "حكمة", "معرفة", "عاطفة", "بصيرة", 
+        "حياة", "وحي", "روحي", "إيمان", "عقلانية", "وجودي", "معنى", "نقي", "أساس", "واقع", 
+        "المنطق البحت", "pure logic", "الإدراك", "perception", "العمق", "depth", "الإيمان", "belief", 
+        "الارتباط", "connection", "العاطفة", "affection", "البناء", "establishment", "الفلسفة", "philosophy"
+      ]
+    },
+    {
+      "quoteId": 68,
+      "philosopherId": 5,
+      "quote": "The state is based on violence; true justice requires non-resistance to evil",
+      "source": "The Kingdom of God Is Within You",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "state", "état", "violence", "non-resistance", "non-résistance", 
+        "peace", "paix", "society", "société", "morality", "moralité", "pacifism", 
+        "pacifisme", "ethics", "éthique", "power", "pouvoir", "evil", "mal", "government", 
+        "gouvernement", "anarchism", "anarchisme", "authority", "autorité", "law", "loi", 
+        "civil disobedience", "désobéissance civile", "spiritual", "spirituel", "war", "guerre", 
+        "love", "amour", "tyranny", "tyrannie",
+        "عدالة", "دولة", "عنف", "لا مقاومة", "سلام", "مجتمع", "أخلاق", "مسالمة", "قوة", 
+        "شر", "حكومة", "فوضوية", "سلطة", "قانون", "عصيان مدني", "روحي", "حرب", "حب", "طغيان", 
+        "الأساس", "basis", "الاستبداد", "despotism", "السياسة", "politics", "المجتمع", "community", 
+        "المقاومة السلمية", "peaceful resistance", "السلوك", "conduct", "الواجب", "duty", "الخضوع", "submission"
+      ]
+    },
+    {
+      "quoteId": 69,
+      "philosopherId": 5,
+      "quote": "Joy can only be real if people see their lives as a service to others",
+      "source": "The Kingdom of God Is Within You",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "joy", "joie", "service", "happiness", "bonheur", "love", "amour", "compassion", 
+        "others", "autres", "meaning", "sens", "purpose", "but", "fulfillment", "accomplissement", 
+        "well-being", "bien-être", "altruism", "altruisme", "spiritual", "spirituel", 
+        "selflessness", "altruisme", "community", "communauté", "connection", "connexion", 
+        "ethics", "éthique", "life", "vie", "authenticity", "authenticité", "duty", "devoir", 
+        "sacrifice", "sacrifice",
+        "فرح", "خدمة", "سعادة", "حب", "شفقة", "آخرون", "معنى", "غاية", "تحقيق", "رفاهية", 
+        "إيثار", "روحي", "مجتمع", "اتصال", "أخلاق", "حياة", "أصالة", "واجب", "تضحية", 
+        "الرضا", "satisfaction", "الامتنان", "gratitude", "العطاء", "giving", "السخاء", "generosity", 
+        "الإخلاص", "sincerity", "الكمال", "perfection", "الإنسانية", "humanity", "التعاون", "cooperation"
+      ]
+    },
+    {
+      "quoteId": 70,
+      "philosopherId": 5,
+      "quote": "Freethinkers are those who are willing to use their minds without prejudice",
+      "source": "A Calendar of Wisdom",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "thinking", "pensée", "learning", "apprentissage", "freedom", "liberté", 
+        "prejudice", "préjugé", "knowledge", "connaissance", "open-mindedness", 
+        "ouverture d'esprit", "wisdom", "sagesse", "independence", "indépendance", 
+        "reason", "raison", "truth", "vérité", "mind", "esprit", "critical thinking", 
+        "pensée critique", "objectivity", "objectivité", "intellectual", "intellectuel", 
+        "autonomy", "autonomie", "doubt", "doute", "inquiry", "enquête", "skepticism", "scepticisme",
+        "تفكير", "تعلم", "حرية", "تحيز", "معرفة", "انفتاح", "حكمة", "استقلال", "عقل", 
+        "حقيقة", "روح", "تفكير نقدي", "موضوعية", "عقلي", "استقلال ذاتي", "شك", "تحقيق", 
+        "الإرادة", "will", "التحرر", "liberation", "البحث", "search", "الوضوح", "clarity", 
+        "العقيدة", "dogma", "الاستكشاف", "exploration", "الفلسفة", "philosophy", "العلم", "science"
+      ]
+    },
+    {
+      "quoteId": 71,
+      "philosopherId": 5,
+      "quote": "The chief difference between words and deeds is that words are always intended for men for their approbation, but deeds can be done only for the welfare of reality",
+      "source": "A Calendar of Wisdom",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "action", "words", "mots", "deeds", "actes", "discipline", "reality", "réalité", 
+        "integrity", "intégrité", "authenticity", "authenticité", "practice", "pratique", 
+        "truth", "vérité", "behavior", "comportement", "approval", "approbation", 
+        "vanity", "vanité", "show", "apparence", "substance", "substance", "ego", "ego", 
+        "humility", "humilité", "external", "externe", "internal", "interne", "focus", 
+        "concentration", "intention", "intention", "performance", "performance", "welfare", 
+        "bien-être", "selflessness", "altruisme", "sincerity", "sincérité", "pragmatism", 
+        "pragmatisme", "consequence", "conséquence", "impact", "impact", "effort", "effort",
+        "فعل", "كلمات", "أفعال", "انضباط", "واقع", "نزاهة", "أصالة", "ممارسة", "حقيقة", 
+        "سلوك", "موافقة", "غرور", "مظهر", "جوهر", "تواضع", "خارجي", "داخلي", "تركيز", 
+        "نية", "أداء", "رفاهية", "إيثار", "صدق", "واقعية", "تأثير", "جهد", "القول والفعل", 
+        "action and speech", "النية", "intent", "المصلحة", "interest", "العمل", "work"
+      ]
+    },
+    {
+      "quoteId": 72,
+      "philosopherId": 5,
+      "quote": "In the name of the welfare of mankind, terrible crimes have been committed",
+      "source": "The Kingdom of God Is Within You",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "welfare", "bien-être", "crimes", "society", "société", "humanity", 
+        "humanité", "morality", "moralité", "ethics", "éthique", "violence", "principles", 
+        "principes", "consequences", "conséquences", "irony", "ironie", "hypocrisy", 
+        "hypocrisie", "ideology", "idéologie", "justification", "justification", "evil", 
+        "mal", "power", "pouvoir", "oppression", "oppression", "war", "guerre", "politics", 
+        "politique", "tragedy", "tragédie", "religion", "religion", "ends", "fins", 
+        "means", "moyens", "injustice", "injustice", "deception", "tromperie",
+        "عدالة", "رفاهية", "جرائم", "مجتمع", "إنسانية", "أخلاق", "عنف", "مبادئ", 
+        "عواقب", "سخرية", "نفاق", "أيديولوجيا", "تبرير", "شر", "قوة", "قمع", "حرب", 
+        "سياسة", "مأساة", "دين", "ظلم", "خداع", "الغاية", "ends", "الوسيلة", "means", 
+        "الإصلاح", "reform", "الفساد", "corruption", "الخطايا", "sins", "الدمار", "destruction"
+      ]
+    },
+    {
+      "quoteId": 73,
+      "philosopherId": 5,
+      "quote": "Without knowing what I am and why I am here, life is impossible",
+      "source": "A Confession",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "life", "vie", "existence", "identity", "identité", "purpose", "but", "meaning", 
+        "sens", "self-knowledge", "connaissance de soi", "human nature", "nature humaine", 
+        "understanding", "compréhension", "awareness", "conscience", "quest", "quête", 
+        "nihilism", "nihilisme", "crisis", "crise", "essential", "essentiel", "search", 
+        "recherche", "foundation", "fondement", "philosophy", "philosophie", "will", 
+        "volonté", "suffering", "souffrance", "truth", "vérité", "reality", "réalité", 
+        "introspection", "introspection",
+        "حياة", "وجود", "هوية", "غاية", "معنى", "وعي ذاتي", "طبيعة بشرية", "فهم", 
+        "وعي", "سعي", "عبثية", "أزمة", "أساسي", "بحث", "أساس", "فلسفة", "إرادة", 
+        "معاناة", "حقيقة", "واقع", "تأمل", "الوجود", "being", "الجوهر", "essence", 
+        "الشك", "doubt", "القيمة", "value", "الاستفهام", "questioning", "الذات", "self"
+      ]
+    },
+    {
+      "quoteId": 74,
+      "philosopherId": 5,
+      "quote": "The sole meaning of life is to serve humanity",
+      "source": "A Confession",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "meaning", "sens", "service", "humanity", "humanité", "purpose", "but", "life", 
+        "vie", "happiness", "bonheur", "fulfillment", "accomplissement", "compassion", 
+        "contribution", "well-being", "bien-être", "altruism", "altruisme", "joy", 
+        "joie", "ethics", "éthique", "morality", "moralité", "duty", "devoir", 
+        "selflessness", "altruisme", "love", "amour", "community", "communauté", 
+        "spiritual", "spirituel", "virtue", "vertu", "sole", "unique", "goal", "objectif",
+        "معنى", "خدمة", "إنسانية", "غاية", "حياة", "سعادة", "تحقيق", "شفقة", "مساهمة", 
+        "رفاهية", "إيثار", "فرح", "أخلاق", "واجب", "حب", "مجتمع", "روحي", "فضيلة", 
+        "وحيد", "هدف", "الهدف الأسمى", "ultimate goal", "العطاء", "giving", "التفاني", 
+        "dedication", "الرضا", "satisfaction", "الخير", "goodness", "الوجود", "existence"
+      ]
+    },
+    {
+      "quoteId": 75,
+      "philosopherId": 5,
+      "quote": "If you want to be happy, be",
+      "source": "A Calendar of Wisdom",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "happiness", "bonheur", "choice", "choix", "simplicity", "simplicité", "being", 
+        "être", "contentment", "contentement", "will", "volonté", "freedom", "liberté", 
+        "peace", "paix", "joy", "joie", "acceptance", "acceptation", "present", "présent", 
+        "action", "action", "mindset", "état d'esprit", "autonomy", "autonomie", 
+        "self-mastery", "maîtrise de soi", "intentionality", "intentionnalité", 
+        "responsibility", "responsabilité", "inner", "intérieur", "realization", 
+        "réalisation", "positivity", "positivité", "simplicity", "simplicité",
+        "سعادة", "اختيار", "بساطة", "وجود", "رضا", "إرادة", "حرية", "سلام", "فرح", 
+        "قبول", "حاضر", "فعل", "عقلية", "تحكم ذاتي", "قصد", "مسؤولية", "داخلي", 
+        "إدراك", "إيجابية", "القرار", "decision", "الآن", "now", "الراحة", "calm", 
+        "التحرر", "liberation", "الحياة", "life", "الرغبة", "desire", "التحقق", "actualization"
+      ]
+    },
+    {
+      "quoteId": 76,
+      "philosopherId": 6,
+      "quote": "Real knowledge is knowing the extent of one's ignorance",
+      "source": "The Great Learning",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "knowledge", "connaissance", "ignorance", "wisdom", "sagesse", "self-awareness", 
+        "conscience de soi", "humility", "humilité", "understanding", "compréhension", 
+        "learning", "apprentissage", "insight", "perspicacité", "recognition", 
+        "reconnaissance", "truth", "vérité", "epistemology", "épistémologie", 
+        "limitation", "limitation", "introspection", "introspection", "socratic", 
+        "socratique", "intellectual", "intellectuel", "clarity", "clarté", 
+        "modesty", "modestie", "realism", "réalisme", "perception", "perception", 
+        "self-cultivation", "auto-culture", "philosophy", "philosophie", "growth", "croissance",
+        "معرفة", "جهل", "حكمة", "وعي ذاتي", "تواضع", "فهم", "تعلم", "بصيرة", "اعتراف", 
+        "حقيقة", "حد", "تأمل", "سقراطي", "عقلي", "وضوح", "واقعية", "إدراك", 
+        "الفلسفة", "نظرية المعرفة", "الذات", "self", "التواضع الفكري", "intellectual humility", 
+        "الوعي بالذات", "self consciousness", "الحدود", "limits", "اليقين", "certainty"
+      ]
+    },
+    {
+      "quoteId": 77,
+      "philosopherId": 6,
+      "quote": "To know what you know and what you do not know, that is true knowledge",
+      "source": "The Doctrine of the Mean",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "knowledge", "connaissance", "learning", "apprentissage", "self-awareness", 
+        "conscience de soi", "honesty", "honnêteté", "understanding", "compréhension", 
+        "wisdom", "sagesse", "truth", "vérité", "clarity", "clarté", "discernment", 
+        "discernement", "insight", "perspicacité", "ignorance", "ignorance", 
+        "precision", "précision", "intellect", "intellect", "balance", "équilibre", 
+        "realism", "réalisme", "self-reflection", "auto-réflexion", "epistemology", 
+        "épistémologie", "mind", "esprit", "certainty", "certitude", "humility", "humilité",
+        "معرفة", "تعلم", "وعي ذاتي", "صدق", "فهم", "حكمة", "حقيقة", "وضوح", 
+        "تمييز", "بصيرة", "جهل", "دقة", "توازن", "واقعية", "تأمل ذاتي", 
+        "نظرية المعرفة", "عقل", "يقين", "تواضع", "الوعي", "awareness", "الفطنة", "shrewdness", 
+        "التحصيل", "acquisition", "التفكير", "thinking", "العمق", "depth"
+      ]
+    },
+    {
+      "quoteId": 78,
+      "philosopherId": 6,
+      "quote": "Lead by example with rectitude, and the people will follow naturally",
+      "source": "Book of Rites",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "ethics", "éthique", "example", "exemple", "rectitude", "droiture", "behavior", 
+        "comportement", "leadership", "direction", "integrity", "intégrité", "virtue", 
+        "vertu", "conduct", "conduite", "morality", "moralité", "influence", "influence", 
+        "governance", "gouvernance", "respect", "respect", "natural", "naturel", 
+        "harmony", "harmonie", "social order", "ordre social", "role model", "modèle", 
+        "responsibility", "responsabilité", "sincerity", "sincérité", "trust", "confiance",
+        "أخلاق", "مثال", "استقامة", "سلوك", "قيادة", "نزاهة", "فضيلة", "معاملة", 
+        "تأثير", "حكم", "احترام", "طبيعي", "انسجام", "نظام اجتماعي", "مسؤولية", 
+        "صدق", "ثقة", "القدوة", "role model", "المتابعة", "following", "السلطة", "authority", 
+        "التعلم", "learning", "العدالة", "justice", "النزاهة", "fairness"
+      ]
+    },
+    {
+      "quoteId": 79,
+      "philosopherId": 6,
+      "quote": "Filial piety and respect for elders are the roots of all virtue",
+      "source": "Classic of Filial Piety",
+      "category": 4,
+      "categoryName": "Life and human nature",
+      "keywords": [
+        "filial piety", "piété filiale", "virtue", "vertu", "relationships", "relations", 
+        "civilization", "civilisation", "respect", "family", "famille", "tradition", 
+        "honor", "honneur", "duty", "devoir", "society", "société", "elders", "aînés", 
+        "roots", "racines", "foundation", "fondation", "hierarchy", "hiérarchie", 
+        "morality", "moralité", "culture", "culture", "benevolence", "bienveillance", 
+        "love", "amour", "obedience", "obéissance", "ethics", "éthique", "social", "social",
+        "بر الوالدين", "فضيلة", "علاقات", "حضارة", "احترام", "عائلة", "تقليد", 
+        "شرف", "واجب", "مجتمع", "كبار السن", "جذور", "أساس", "تسلسل هرمي", "أخلاق", 
+        "ثقافة", "محبة", "طاعة", "اجتماعي", "الأصل", "origin", "الولاء", "loyalty", 
+        "الأسرة", "kinship", "العائلة", "household", "الرحمة", "compassion", "الأصول", "principles"
+      ]
+    },
+    {
+      "quoteId": 80,
+      "philosopherId": 6,
+      "quote": "The superior man thinks of virtue; the common man thinks of comfort",
+      "source": "The Great Learning",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "virtue", "vertu", "discipline", "superior man", "homme supérieur", "conduct", 
+        "conduite", "excellence", "excellence", "character", "caractère", "priorities", 
+        "priorités", "principles", "principes", "morality", "moralité", "action", 
+        "comfort", "confort", "common man", "homme commun", "focus", "concentration", 
+        "aspiration", "aspiration", "materialism", "matérialisme", "spiritual", 
+        "spirituel", "self-cultivation", "auto-culture", "duty", "devoir", "ren", "ren",
+        "فضيلة", "انضباط", "الرجل النبيل", "سلوك", "تميز", "شخصية", "أولويات", 
+        "مبادئ", "أخلاق", "عمل", "راحة", "الرجل العادي", "تركيز", "طموح", "مادية", 
+        "روحي", "واجب", "الجوهر", "essence", "الترف", "luxury", "الكمال", "perfection", 
+        "السمو", "elevation", "العمق", "depth", "التفكير", "thinking"
+      ]
+    },
+    {
+      "quoteId": 81,
+      "philosopherId": 6,
+      "quote": "The superior man is free from anxiety by fulfilling his proper role",
+      "source": "The Doctrine of the Mean",
+      "category": 6,
+      "categoryName": "Freedom",
+      "keywords": [
+        "freedom", "liberté", "social order", "ordre social", "role", "rôle", "harmony", 
+        "harmonie", "duty", "devoir", "peace", "paix", "contentment", "contentement", 
+        "purpose", "but", "responsibility", "responsabilité", "balance", "équilibre", 
+        "anxiety", "anxiété", "superior man", "homme supérieur", "function", "fonction", 
+        "order", "ordre", "tranquility", "tranquillité", "ethics", "éthique", 
+        "self-control", "maîtrise de soi", "fulfillment", "accomplissement", "zen", "zen",
+        "حرية", "نظام اجتماعي", "دور", "انسجام", "واجب", "سلام", "رضا", "غاية", 
+        "مسؤولية", "توازن", "قلق", "الرجل النبيل", "وظيفة", "نظام", "هدوء", 
+        "أخلاق", "تحكم ذاتي", "تحقيق", "السكينة", "serenity", "الطبيعة", "nature", 
+        "التحرر", "liberation", "الأمن", "security", "الوعي", "awareness", "التركيز", "focus"
+      ]
+    },
+    {
+      "quoteId": 82,
+      "philosopherId": 6,
+      "quote": "The superior man understands what is right; the inferior understands profit",
+      "source": "The Great Learning",
+      "category": 8,
+      "categoryName": "Reason and logic",
+      "keywords": [
+        "reason", "raison", "logic", "logique", "righteousness", "droiture", "wisdom", 
+        "sagesse", "morality", "moralité", "understanding", "compréhension", 
+        "values", "valeurs", "principles", "principes", "judgment", "jugement", 
+        "discernment", "discernement", "profit", "profit", "materialism", "matérialisme", 
+        "ethics", "éthique", "superior", "supérieur", "inferior", "inférieur", 
+        "priorities", "priorités", "truth", "vérité", "self-interest", "intérêt personnel",
+        "عقل", "منطق", "صلاح", "حكمة", "أخلاق", "فهم", "قيم", "مبادئ", "حكم", 
+        "تمييز", "ربح", "مادية", "متفوق", "أدنى", "أولويات", "حقيقة", 
+        "المصلحة الذاتية", "self interest", "النزاهة", "integrity", "الرجل النبيل", "superior man", 
+        "البصيرة", "insight", "العقلانية", "rationality", "المعرفة", "knowledge"
+      ]
+    },
+    {
+      "quoteId": 83,
+      "philosopherId": 6,
+      "quote": "A man of humanity loves all men through proper conduct and righteousness",
+      "source": "Book of Rites",
+      "category": 9,
+      "categoryName": "Society and Justice",
+      "keywords": [
+        "justice", "humanity", "humanité", "society", "société", "righteousness", 
+        "droiture", "love", "amour", "conduct", "conduite", "morality", "moralité", 
+        "compassion", "ethics", "éthique", "harmony", "harmonie", "ren", "ren", 
+        "benevolence", "bienveillance", "respect", "respect", "virtue", "vertu", 
+        "relationships", "relations", "social", "social", "order", "ordre", 
+        "empathy", "empathie", "behavior", "comportement", "universal", "universel",
+        "عدالة", "إنسانية", "مجتمع", "صلاح", "حب", "سلوك", "أخلاق", "شفقة", 
+        "انسجام", "مودة", "احترام", "فضيلة", "علاقات", "نظام", "تعاطف", 
+        "كوني", "الخير", "goodness", "التعاون", "cooperation", "الواجب", "duty", 
+        "الرحمة", "mercy", "الرابط", "bond", "الإحسان", "charity", "الكمال", "perfection"
+      ]
+    },
+    {
+      "quoteId": 84,
+      "philosopherId": 6,
+      "quote": "When you do your duty faithfully, happiness follows naturally",
+      "source": "The Doctrine of the Mean",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "happiness", "bonheur", "duty", "devoir", "role", "rôle", "well-being", 
+        "bien-être", "fulfillment", "accomplissement", "contentment", "contentement", 
+        "peace", "paix", "harmony", "harmonie", "virtue", "vertu", "satisfaction", 
+        "faithfully", "fidèlement", "natural", "naturel", "consequence", "conséquence", 
+        "ethics", "éthique", "discipline", "discipline", "responsibility", 
+        "responsabilité", "sincerity", "sincérité", "order", "ordre", "effort", "effort",
+        "سعادة", "واجب", "دور", "رفاهية", "تحقيق", "رضا", "سلام", "انسجام", 
+        "فضيلة", "إخلاص", "طبيعي", "نتيجة", "أخلاق", "انضباط", "مسؤولية", 
+        "صدق", "نظام", "جهد", "السكينة", "serenity", "الاستقامة", "rectitude", 
+        "الالتزام", "commitment", "الراحة", "calm", "الاستقرار", "stability", "الهدف", "purpose"
+      ]
+    },
+    {
+      "quoteId": 85,
+      "philosopherId": 6,
+      "quote": "The man of wisdom delights in water; the man of humanity delights in mountains",
+      "source": "Analects",
+      "category": 1,
+      "categoryName": "Wisdom",
+      "keywords": [
+        "wisdom", "sagesse", "nature", "la nature", "understanding", "compréhension", 
+        "contemplation", "la contemplation", "philosophy", "la philosophie", "insight", 
+        "la perspicacité", "reflection", "la réflexion", "harmony", "l'harmonie", 
+        "balance", "l'équilibre", "peace", "la paix", "humanity", "humanité", 
+        "water", "eau", "mountains", "montagnes", "symbolism", "symbolisme", 
+        "change", "changement", "stability", "stabilité", "virtue", "vertu", 
+        "ren", "ren", "perspective", "perspective", "joy", "joie", "delight", "délice",
+        "حكمة", "طبيعة", "فهم", "تأمل", "فلسفة", "بصيرة", "انسجام", "توازن", 
+        "سلام", "إنسانية", "ماء", "جبال", "رمزية", "تغيير", "استقرار", "فضيلة", 
+        "منظور", "فرح", "بهجة", "الحركة", "motion", "الثبات", "constancy", 
+        "العمق", "depth", "السكون", "stillness", "الجمال", "beauty", "التقدير", "appreciation"
+      ]
+    },
+    {
+      "quoteId": 86,
+      "philosopherId": 6,
+      "quote": "Learning without thought is labor lost; thought without learning is perilous",
+      "source": "Analects",
+      "category": 2,
+      "categoryName": "Knowledge and learning",
+      "keywords": [
+        "learning", "l'apprentissage", "thought", "la pensée", "knowledge", 
+        "la connaissance", "education", "l'éducation", "wisdom", "la sagesse", 
+        "balance", "l'équilibre", "understanding", "la compréhension", "study", 
+        "l'étude", "reflection", "la réflexion", "cultivation", "la culture", 
+        "labor", "travail", "perilous", "périlleux", "danger", "danger", 
+        "critical thinking", "pensée critique", "theory", "théorie", "practice", 
+        "pratique", "mind", "esprit", "autonomy", "autonomie", "integration", "intégration",
+        "تعلم", "تفكير", "معرفة", "تعليم", "حكمة", "توازن", "فهم", "دراسة", 
+        "تأمل", "ثقافة", "عمل", "خطر", "مخاطرة", "نظرية", "ممارسة", "عقل", 
+        "استقلال ذاتي", "تكامل", "التفكير النقدي", "critical thought", "المنهجية", "methodology", 
+        "الجهد", "effort", "العمق", "depth", "السطحية", "superficiality", "الحقيقة", "truth"
+      ]
+    },
+    {
+      "quoteId": 87,
+      "philosopherId": 6,
+      "quote": "When we see men of worth, we should think of equaling them",
+      "source": "Analects",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "virtue", "la vertu", "excellence", "l'excellence", "inspiration", "l'inspiration", 
+        "emulation", "l'émulation", "improvement", "l'amélioration", "aspiration", 
+        "l'aspiration", "discipline", "la discipline", "growth", "la croissance", 
+        "character", "le caractère", "development", "le développement", "worth", 
+        "valeur", "model", "modèle", "effort", "effort", "motivation", "motivation", 
+        "self-cultivation", "auto-culture", "ambition", "ambition", "ethics", "éthique", 
+        "action", "action", "role model", "modèle de rôle", "goal", "objectif",
+        "فضيلة", "تميز", "إلهام", "منافسة", "تحسين", "طموح", "انضباط", "نمو", 
+        "شخصية", "تطور", "قيمة", "قدوة", "جهد", "دافع", "أخلاق", "عمل", 
+        "الكمال", "perfection", "السعي", "pursuit", "المثابرة", "perseverance", 
+        "الارتقاء", "elevation", "المقارنة", "comparison", "التعلم", "learning", "التقليد", "imitation"
+      ]
+    },
+    {
+      "quoteId": 88,
+      "philosopherId": 6,
+      "quote": "The superior man is modest in his speech but exceeds in his actions",
+      "source": "Analects",
+      "category": 3,
+      "categoryName": "Ethics and behavior",
+      "keywords": [
+        "modesty", "la modestie", "action", "l'action", "integrity", "l'intégrité", 
+        "behavior", "le comportement", "conduct", "la conduite", "humility", 
+        "l'humilité", "deeds", "les actes", "character", "le caractère", "virtue", 
+        "la vertu", "excellence", "l'excellence", "speech", "discours", "words", 
+        "mots", "sincerity", "sincérité", "authenticity", "authenticité", 
+        "show", "spectacle", "substance", "substance", "discipline", "discipline", 
+        "self-control", "maîtrise de soi", "focus", "concentration",
+        "تواضع", "فعل", "نزاهة", "سلوك", "معاملة", "أفعال", "شخصية", 
+        "فضيلة", "تميز", "كلام", "صدق", "أصالة", "جوهر", "انضباط", 
+        "تحكم ذاتي", "تركيز", "الرجل النبيل", "superior man", "الابتعاد عن التباهي", 
+        "avoiding show", "الجدية", "seriousness", "الإنجاز", "achievement", "الاحترام", "respect"
+      ]
+    },
+    {
+      "quoteId": 89,
+      "philosopherId": 6,
+      "quote": "To be wronged is nothing unless you continue to remember it",
+      "source": "Analects",
+      "category": 10,
+      "categoryName": "Happiness and well-being",
+      "keywords": [
+        "forgiveness", "le pardon", "peace", "la paix", "letting go", "le lâcher-prise", 
+        "happiness", "le bonheur", "well-being", "le bien-être", "freedom", 
+        "la liberté", "healing", "la guérison", "acceptance", "l'acceptation", 
+        "wisdom", "la sagesse", "tranquility", "la tranquillité", "resentment", 
+        "ressentiment", "memory", "mémoire", "suffering", "souffrance", "release", 
+        "libération", "mindset", "état d'esprit", "self-control", "maîtrise de soi", 
+        "past", "passé", "present", "présent", "choice", "choix", "calm", "calme",
+        "تسامح", "سلام", "تخلي", "سعادة", "رفاهية", "حرية", "شفاء", "قبول", 
+        "حكمة", "هدوء", "استياء", "ذاكرة", "معاناة", "تحرر", "عقلية", 
+        "تحكم ذاتي", "ماضي", "حاضر", "اختيار", "سكينة", "الصفح", "condonation", 
+        "النسيان", "forgetting", "الراحة", "rest", "النمو", "growth", "المصالحة", "reconciliation"
+      ]
+    },
+    {
+      "quoteId": 90,
+      "philosopherId": 6,
+      "quote": "Wheresoever you go, go with all your heart",
+      "source": "Analects",
+      "category": 5,
+      "categoryName": "Action and discipline",
+      "keywords": [
+        "commitment", "l'engagement", "dedication", "le dévouement", "wholeness", 
+        "la plénitude", "action", "l'action", "passion", "la passion", "sincerity", 
+        "la sincérité", "effort", "l'effort", "discipline", "la discipline", 
+        "purpose", "le but", "integrity", "l'intégrité", "focus", "concentration", 
+        "enthusiasm", "enthousiasme", "intention", "intention", "presence", "présence", 
+        "excellence", "excellence", "concentration", "concentration", "mindfulness", 
+        "pleine conscience", "virtue", "vertu", "conviction", "conviction", "heart", "cœur",
+        "التزام", "تفاني", "كمال", "فعل", "شغف", "إخلاص", "جهد", "انضباط", 
+        "غاية", "نزاهة", "تركيز", "حماس", "نية", "حضور", "تميز", "يقظة", 
+        "فضيلة", "قناعة", "قلب", "الإتقان", "mastery", "التركيز التام", "full focus", 
+        "الجدية", "seriousness", "الروح", "spirit", "العزم", "determination", "الاستقامة", "rectitude"
+      ]
+    }
+  ]
+}

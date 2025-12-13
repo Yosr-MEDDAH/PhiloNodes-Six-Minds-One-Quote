@@ -1,0 +1,52 @@
+{
+  "philosophers": [
+    {
+      "philosopherId": 1,
+      "name": "Aristotle",
+      "era": "384-322 BCE",
+      "school": "Classical Virtue Ethics",
+      "bio": "A Greek polymath and student of Plato who laid the foundations for Western logic, science, and ethics through the concept of virtue.",
+      "culture": "Ancient Greek"
+    },
+    {
+      "philosopherId": 2,
+      "name": "Immanuel Kant",
+      "era": "1724-1804 CE",
+      "school": "Deontological Ethics",
+      "bio": "A central Enlightenment thinker who argued that human reason creates morality and that duty is the highest standard of action.",
+      "culture": "German"
+    },
+    {
+      "philosopherId": 3,
+      "name": "Friedrich Nietzsche",
+      "era": "1844-1900 CE",
+      "school": "Power Philosophy",
+      "bio": "A cultural critic who challenged traditional morality and Christianity, emphasizing the 'will to power' and self-overcoming.",
+      "culture": "German"
+    },
+    {
+      "philosopherId": 4,
+      "name": "Fyodor Dostoevsky",
+      "era": "1821-1881 CE",
+      "school": "Christian Existentialism",
+      "bio": "A novelist whose works explore the deepest depths of human psychology, faith, and the conflict between reason and the soul.",
+      "culture": "Russian"
+    },
+    {
+      "philosopherId": 5,
+      "name": "Leo Tolstoy",
+      "era": "1828-1910 CE",
+      "school": "Christian Anarchism",
+      "bio": "A literary giant who later advocated for non-violent resistance, simple living, and a moral interpretation of Christianity.",
+      "culture": "Russian"
+    },
+    {
+      "philosopherId": 6,
+      "name": "Confucius",
+      "era": "551-479 BCE",
+      "school": "Social/Virtue Ethics",
+      "bio": "A teacher and philosopher who emphasized social harmony, filial piety, and the moral responsibilities of rulers and subjects.",
+      "culture": "Ancient Chinese"
+    }
+  ]
+}
