@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PhiloNodes Chat</title>
+        <link rel="stylesheet" href="chat.css" />
+    </head>
+    <body>
+        <button
+        id="PhiloNodes-chat-btn"
+        class="chat-floating-btn"
+        aria-label="Ouvrir PhiloNodes Chat"
+        >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+        </button>
+
+        <div id="PhiloNodes-chat-window" class="chat-window" style="display: none">
+        <div class="chat-header">
+            <div class="chat-header-content">
+            <div class="chat-icon">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+            </div>
+            <div>
+                <h2>PhiloNodes</h2>
+                <p class="chat-subtitle">Débat Philosophique en Temps Réel</p>
+            </div>
+            </div>
+            <button
+            id="chat-close-btn"
+            class="chat-close-btn"
+            aria-label="Fermer le chat"
+            >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            </button>
+        </div>
+
+        <div class="chat-body" id="chat-messages">
+            <div class="chat-welcome">
+            <div class="welcome-icon">📜</div>
+            <h3>Bienvenue dans le Cercle des Penseurs</h3>
+            <p>
+                Posez votre question ou entrez un mot-clé pour débuter le débat
+                philosophique entre nos 6 grands penseurs.
+            </p>
+            <div class="philosophers-preview">
+                <span class="philosopher-badge">Aristotle</span>
+                <span class="philosopher-badge">Kant</span>
+                <span class="philosopher-badge">Nietzsche</span>
+                <span class="philosopher-badge">Dostoevsky</span>
+                <span class="philosopher-badge">Tolstoy</span>
+                <span class="philosopher-badge">Confucius</span>
+            </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="chat-input-wrapper">
+            <input
+                type="text"
+                id="chat-input"
+                class="chat-input"
+                placeholder="Entrez votre question ou mot-clé (ex: stress au travail)..."
+                maxlength="200"
+            />
+            <button id="chat-send-btn" class="chat-send-btn" aria-label="Envoyer">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+            </div>
+            <div class="chat-hint">
+            Exemples: "paix", "bonheur", "liberté", "courage", "sagesse"
+            </div>
+        </div>
+        </div>
+
+        <script src="chat.js"></script>
+    </body>
+    </html>

@@ -1,23 +1,58 @@
-Créer l'environnement virtuel
+# PhiloNodes – Six Minds, One Quote 
+
+## Aperçu du Projet
+
+**PhiloNodes** est un **système distribué de recommandation de citations philosophiques**.
+
+Il se compose d'une **Extension Chrome** (Frontend) et d'un **Backend Python** hébergeant **6 Nœuds Philosophes** autonomes. Ces nœuds communiquent via sockets TCP pour **voter** et sélectionner la citation la plus pertinente selon un **protocole de consensus distribué**.
+
+**But :** Fournir à l'utilisateur des citations pertinentes basées sur son contexte de navigation, choisies par un "débat" entre différentes écoles philosophiques. 
+
+## Installation et Démarrage
+
+### 1. Préparation de l'Environnement (Backend Python)
+
+Ouvrez le terminal de VS Code ou votre ligne de commande dans le répertoire racine du projet.
+
+#### Créer et Activer l'Environnement Virtuel :
+
+
 python -m venv venv
-
-Activer le venv
 venv\Scripts\activate
+Installer les Dépendances :
+(Note : La deuxième commande utilise un index PyPI alternatif pour une installation rapide et fiable.)
 
-Installer les dépendances
-pip install -r requirements.txt pip install -r requirements.txt --no-cache-dir --default-timeout=300 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
-Dans un autre terminal :
+pip install -r requirements.txt 
+pip install -r requirements.txt --no-cache-dir --default-timeout=300 -i [https://pypi.tuna.tsinghua.edu.cn/simple](https://pypi.tuna.tsinghua.edu.cn/simple)
+### 2. Lancement du Backend Distribué (Nœuds)
+Dans un second terminal (assurez-vous que le venv y est également activé) :
+
+
 venv\Scripts\activate
+Se déplacer dans le répertoire du backend :
+
+
+
 cd backend
+Lancer les 6 Nœuds Philosophes :
+
+
+
 launch_all_nodes
+### 3. Installation de l'Extension Chrome (Frontend)
+Ouvrez Chrome et naviguez vers : chrome://extensions/
 
-go open chrome://extensions/
-click : load unpacked 
-Select folder "extension"dossier li fih manifest.json (dossier keml mosh juste fichier)
-click open
+Activez le Mode Développeur (Developer Mode).
 
-search fl google "knowledge, stress i haja fiha sujet yaani w 7el lextension mnfou9 w run it
+Cliquez sur Charger l'extension non empaquetée (Load unpacked).
 
-open the dashboard/index.html normally no code needed just go to file location and enter it
+Sélectionnez le dossier extension.
+
+## Utilisation et Supervision
+Test d'Usage : Une fois les nœuds lancés et l'extension installée, effectuez une recherche sur Google (ex: "knowledge"). L'extension affichera la citation retenue par le consensus.
+
+Tableau de Bord : Pour visualiser le statut des nœuds et le processus de vote en temps réel :
+
+Ouvrir le fichier dashboard/dashboard.html dans votre navigateur.

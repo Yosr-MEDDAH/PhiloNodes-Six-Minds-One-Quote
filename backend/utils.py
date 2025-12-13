@@ -209,6 +209,7 @@ def format_response_message(
         "philosopher_id": philosopher_id,
         "philosopher_name": philosopher_name,
         "quote": {
+            "philosopherId": quote.get("philosopherId"),
             "quoteId": quote.get("quoteId"),
             "text": quote.get("quote"),
             "source": quote.get("source"),
