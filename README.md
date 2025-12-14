@@ -19,6 +19,7 @@ Ouvrez le terminal de VS Code ou votre ligne de commande dans le répertoire rac
 
 >> python -m venv venv
 >> venv\Scripts\activate
+
 Installer les Dépendances :
 (Note : La deuxième commande utilise un index PyPI alternatif pour une installation rapide et fiable.)
 
@@ -31,11 +32,13 @@ Dans un second terminal (assurez-vous que le venv y est également activé) :
 
 
 >> venv\Scripts\activate
+
 Se déplacer dans le répertoire du backend :
 
 
 
 >> cd backend
+
 Lancer les 6 Nœuds Philosophes :
 
 
