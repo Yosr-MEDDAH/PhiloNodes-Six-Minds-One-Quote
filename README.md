@@ -17,30 +17,30 @@ Ouvrez le terminal de VS Code ou votre ligne de commande dans le répertoire rac
 #### Créer et Activer l'Environnement Virtuel :
 
 
-python -m venv venv
-venv\Scripts\activate
+>> python -m venv venv
+>> venv\Scripts\activate
 Installer les Dépendances :
 (Note : La deuxième commande utilise un index PyPI alternatif pour une installation rapide et fiable.)
 
 
 
-pip install -r requirements.txt 
-pip install -r requirements.txt --no-cache-dir --default-timeout=300 -i [https://pypi.tuna.tsinghua.edu.cn/simple](https://pypi.tuna.tsinghua.edu.cn/simple)
+>> pip install -r requirements.txt 
+>> pip install -r requirements.txt --no-cache-dir --default-timeout=300 -i [https://pypi.tuna.tsinghua.edu.cn/simple](https://pypi.tuna.tsinghua.edu.cn/simple)
 ### 2. Lancement du Backend Distribué (Nœuds)
 Dans un second terminal (assurez-vous que le venv y est également activé) :
 
 
-venv\Scripts\activate
+>> venv\Scripts\activate
 Se déplacer dans le répertoire du backend :
 
 
 
-cd backend
+>> cd backend
 Lancer les 6 Nœuds Philosophes :
 
 
 
-launch_all_nodes
+>> launch_all_nodes
 ### 3. Installation de l'Extension Chrome (Frontend)
 Ouvrez Chrome et naviguez vers : chrome://extensions/
 
