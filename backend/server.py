@@ -1,9 +1,3 @@
-# server.py - Enhanced with detailed node metrics for distributed system visualization
-"""
-Serveur coordinateur FastAPI avec métriques détaillées pour visualisation
-du système distribué (TCP, consensus, communication inter-nœuds)
-"""
-
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -26,14 +20,8 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 logger = logging.getLogger(__name__)
-
-# ============================================
-# STOCKAGE DES MÉTRIQUES DISTRIBUÉES
-# ============================================
-
 recommendations_history = deque(maxlen=100)
 
-# Métriques par nœud
 node_metrics = {
     phil_id: {
         "total_requests": 0,
@@ -50,10 +38,8 @@ node_metrics = {
     for phil_id in PHILOSOPHERS.keys()
 }
 
-# Historique des messages (derniers 50)
 message_log = deque(maxlen=50)
 
-# Métriques globales
 global_metrics = {
     "total_consensus_sessions": 0,
     "successful_consensus": 0,
@@ -62,9 +48,6 @@ global_metrics = {
     "avg_processing_time": 0.0
 }
 
-# ============================================
-# INITIALISATION FASTAPI
-# ============================================
 
 app = FastAPI(
     title=API_TITLE,
@@ -85,30 +68,24 @@ consensus_protocol = ConsensusProtocol()
 
 @app.on_event("startup")
 async def startup_event():
-    logger.info("🚀 Démarrage du serveur...")
+    logger.info("Démarrage du serveur...")
     socket_manager.scan_all_nodes()
     active, total = socket_manager.get_nodes_count()
     logger.info(f" Serveur prêt! {active}/{total} nœuds actifs")
     
-    # Background task pour heartbeat périodique
     asyncio.create_task(periodic_heartbeat())
 
 async def periodic_heartbeat():
-    """Heartbeat périodique pour surveiller les nœuds"""
     while True:
         await asyncio.sleep(5)
         socket_manager.scan_all_nodes()
         
-        # Mettre à jour le statut de connexion
         for phil_id in PHILOSOPHERS.keys():
             is_active = phil_id in socket_manager.active_nodes
             node_metrics[phil_id]["connection_status"] = "connected" if is_active else "disconnected"
             if is_active:
                 node_metrics[phil_id]["last_seen"] = time.time()
 
-# ============================================
-# MODÈLES PYDANTIC
-# ============================================
 
 class RecommendationRequest(BaseModel):
     context: Optional[str] = Field(None, description="Contexte textuel")
@@ -123,12 +100,7 @@ class QuoteResponse(BaseModel):
     active_nodes: int = Field(description="Nœuds actifs")
     node_timings: Optional[dict] = Field(description="Temps de réponse par nœud")
 
-# ============================================
-# FONCTIONS UTILITAIRES MÉTRIQUES
-# ============================================
-
 def log_message(message_type: str, source: str, target: str, content: str):
-    """Enregistre un message dans l'historique"""
     message_log.appendleft({
         "timestamp": time.time(),
         "type": message_type,
@@ -138,7 +110,6 @@ def log_message(message_type: str, source: str, target: str, content: str):
     })
 
 def update_node_metrics(phil_id: int, response_time: float, success: bool, vote: str):
-    """Met à jour les métriques d'un nœud"""
     metrics = node_metrics[phil_id]
     
     metrics["total_requests"] += 1
@@ -157,10 +128,6 @@ def update_node_metrics(phil_id: int, response_time: float, success: bool, vote:
     
     metrics["last_seen"] = time.time()
 
-# ============================================
-# ENDPOINTS API
-# ============================================
-
 @app.get("/")
 async def root():
     active, total = socket_manager.get_nodes_count()
@@ -176,20 +143,16 @@ async def root():
 
 @app.post("/recommend", response_model=QuoteResponse)
 async def recommend_quote(request: RecommendationRequest):
-    """Endpoint principal avec métriques détaillées"""
     start_time = time.time()
     
-    logger.info(f"📨 Nouvelle demande: contexte='{request.context}'")
+    logger.info(f"Nouvelle demande: contexte='{request.context}'")
     
-    # Log du message initial
     log_message("REQUEST", "Client", "Coordinateur", f"Contexte: {request.context}")
     
     active, total = socket_manager.get_nodes_count()
     if active == 0:
         logger.error(" Aucun nœud actif!")
         raise HTTPException(status_code=503, detail="Aucun nœud actif")
-    
-    # Distribution avec timing par nœud
     node_timings = {}
     
     log_message("BROADCAST", "Coordinateur", "Tous les nœuds", "Distribution de la requête")
@@ -217,7 +180,6 @@ async def recommend_quote(request: RecommendationRequest):
         
         responses[phil_id] = response
     
-    # Calcul du consensus
     log_message("CONSENSUS_START", "Coordinateur", "Protocole", "Calcul du consensus")
     result = consensus_protocol.aggregate_votes(responses)
     log_message("CONSENSUS_END", "Protocole", "Coordinateur", 
@@ -225,7 +187,6 @@ async def recommend_quote(request: RecommendationRequest):
     
     processing_time = round(time.time() - start_time, 3)
     
-    # Mise à jour métriques globales
     global_metrics["total_consensus_sessions"] += 1
     global_metrics["total_processing_time"] += processing_time
     global_metrics["avg_processing_time"] = round(
@@ -237,7 +198,6 @@ async def recommend_quote(request: RecommendationRequest):
     else:
         global_metrics["failed_consensus"] += 1
     
-    # Construction de la réponse
     response_data = {
         "winner": result["winner"],
         "consensus": result["consensus"],
@@ -247,7 +207,6 @@ async def recommend_quote(request: RecommendationRequest):
         "node_timings": node_timings
     }
     
-    # Stockage pour le dashboard
     recommendation_entry = {
         "timestamp": int(time.time() * 1000),
         "context": {
@@ -275,7 +234,6 @@ async def recommend_quote(request: RecommendationRequest):
 
 @app.get("/recommendations")
 async def get_recommendations(limit: int = 50):
-    """Retourne l'historique des recommandations"""
     recommendations_list = list(recommendations_history)[:limit]
     
     return {
@@ -287,10 +245,9 @@ async def get_recommendations(limit: int = 50):
 
 @app.delete("/recommendations")
 async def clear_recommendations():
-    """Efface l'historique des recommandations"""
     count = len(recommendations_history)
     recommendations_history.clear()
-    logger.info(f"🗑️ Historique effacé ({count} entrées)")
+    logger.info(f"Historique effacé ({count} entrées)")
     
     return {
         "message": "Historique effacé",
@@ -298,10 +255,8 @@ async def clear_recommendations():
     }
 
 
-# ✨ NOUVEAU: Métriques des nœuds
 @app.get("/metrics/nodes")
 async def get_node_metrics():
-    """Retourne les métriques détaillées de chaque nœud"""
     metrics_with_names = {}
     
     for phil_id, metrics in node_metrics.items():
@@ -323,10 +278,8 @@ async def get_node_metrics():
     }
 
 
-# ✨ NOUVEAU: Historique des messages
 @app.get("/metrics/messages")
 async def get_message_log(limit: int = 50):
-    """Retourne l'historique des messages TCP"""
     messages = list(message_log)[:limit]
     
     return {
@@ -336,10 +289,8 @@ async def get_message_log(limit: int = 50):
     }
 
 
-# ✨ NOUVEAU: Métriques globales
 @app.get("/metrics/global")
 async def get_global_metrics():
-    """Retourne les métriques globales du système"""
     return {
         **global_metrics,
         "timestamp": time.time(),
@@ -352,7 +303,6 @@ async def get_global_metrics():
 
 @app.get("/status")
 async def get_status():
-    """Retourne l'état du système"""
     active, total = socket_manager.get_nodes_count()
     
     all_philosophers = []
@@ -386,8 +336,7 @@ async def get_status():
 
 @app.post("/scan")
 async def scan_nodes():
-    """Force un nouveau scan de tous les nœuds"""
-    logger.info("🔍 Scan manuel des nœuds")
+    logger.info("Scan manuel des nœuds")
     availability = socket_manager.scan_all_nodes()
     active, total = socket_manager.get_nodes_count()
     
@@ -404,7 +353,6 @@ async def scan_nodes():
 
 @app.get("/philosophers")
 async def get_philosophers():
-    """Retourne la liste de tous les philosophes"""
     return {
         "philosophers": [
             {

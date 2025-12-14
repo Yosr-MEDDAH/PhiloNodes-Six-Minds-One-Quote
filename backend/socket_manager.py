@@ -1,8 +1,3 @@
-# socket_manager.py
-"""
-Gestionnaire de connexions TCP vers les nœuds philosophes
-Gère la connexion, l'envoi de requêtes et la réception de réponses
-"""
 
 import socket
 import json
@@ -20,27 +15,13 @@ logger = logging.getLogger(__name__)
 
 
 class SocketManager:
-    """
-    Gestionnaire de connexions TCP vers les 6 nœuds philosophes
-    """
-    
+ 
     def __init__(self):
-        """Initialise le gestionnaire de connexions"""
         self.philosophers = PHILOSOPHERS
-        self.active_nodes = {}  # {philosopher_id: {"name": str, "port": int, "status": str}}
-        
+        self.active_nodes = {}          
         logger.info("SocketManager initialisé")
     
     def check_node_availability(self, philosopher_id: int) -> bool:
-        """
-        Vérifie si un nœud est disponible en tentant une connexion
-        
-        Args:
-            philosopher_id: ID du philosophe (1-6)
-            
-        Returns:
-            True si le nœud répond, False sinon
-        """
         if philosopher_id not in self.philosophers:
             return False
         
@@ -52,7 +33,6 @@ class SocketManager:
             sock.settimeout(1.0)
             sock.connect((HOST, port))
             
-            # Test heartbeat
             heartbeat = json.dumps({"type": "HEARTBEAT"})
             sock.sendall(heartbeat.encode('utf-8'))
             
@@ -77,12 +57,6 @@ class SocketManager:
         return False
     
     def scan_all_nodes(self) -> Dict[int, bool]:
-        """
-        Scanne tous les 6 nœuds pour détecter lesquels sont actifs
-        
-        Returns:
-            Dictionnaire {philosopher_id: is_available}
-        """
         logger.info("Scan de tous les 6 nœuds philosophes...")
         
         availability = {}
@@ -102,18 +76,6 @@ class SocketManager:
         keywords: List[str],
         category_name: Optional[str]
     ) -> Optional[Dict]:
-        """
-        Envoie une requête à un nœud spécifique et attend la réponse
-        
-        Args:
-            philosopher_id: ID du philosophe
-            context: Contexte textuel
-            keywords: Liste de mots-clés
-            category_name: Nom de la catégorie
-            
-        Returns:
-            Dictionnaire de réponse ou None si échec
-        """
         if philosopher_id not in self.philosophers:
             logger.error(f"ID philosophe invalide: {philosopher_id}")
             return None
@@ -121,7 +83,6 @@ class SocketManager:
         port = self.philosophers[philosopher_id]["port"]
         name = self.philosophers[philosopher_id]["name"]
         
-        # Préparation de la requête
         request = {
             "type": MSG_TYPE_REQUEST,
             "context": context or "",
@@ -131,19 +92,15 @@ class SocketManager:
         
         request_json = json.dumps(request)
         
-        # Tentatives de connexion avec retry
         for attempt in range(CONNECTION_RETRY):
             try:
-                # Connexion au nœud
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 sock.settimeout(SOCKET_TIMEOUT)
                 sock.connect((HOST, port))
                 
-                # Envoi de la requête
                 sock.sendall(request_json.encode('utf-8'))
                 logger.debug(f"Requête envoyée à {name} (tentative {attempt + 1})")
                 
-                # Réception de la réponse
                 response_data = sock.recv(4096).decode('utf-8')
                 sock.close()
                 
@@ -151,7 +108,6 @@ class SocketManager:
                     logger.warning(f"Réponse vide de {name}")
                     continue
                 
-                # Parse de la réponse
                 response = parse_message(response_data)
                 
                 if response:
@@ -183,23 +139,11 @@ class SocketManager:
         keywords: List[str],
         category_name: Optional[str]
     ) -> Dict[int, Optional[Dict]]:
-        """
-        Envoie une requête à TOUS les nœuds actifs et collecte les réponses
-        
-        Args:
-            context: Contexte textuel
-            keywords: Mots-clés
-            category_name: Catégorie demandée
-            
-        Returns:
-            Dictionnaire {philosopher_id: response_dict}
-            response_dict peut être None si le nœud n'a pas répondu
-        """
+       
         logger.info(f"Diffusion de la requête à {len(self.active_nodes)} nœuds actifs...")
         
         responses = {}
         
-        # Envoi séquentiel (on pourrait paralléliser avec threads, mais pas nécessaire)
         for phil_id in self.active_nodes.keys():
             response = self.send_request_to_node(
                 philosopher_id=phil_id,
@@ -209,19 +153,13 @@ class SocketManager:
             )
             responses[phil_id] = response
         
-        # Statistiques
         successful = sum(1 for r in responses.values() if r is not None)
         logger.info(f"Diffusion terminée: {successful}/{len(self.active_nodes)} nœuds ont répondu")
         
         return responses
     
     def get_active_nodes_info(self) -> List[Dict]:
-        """
-        Retourne les informations sur les nœuds actifs
-        
-        Returns:
-            Liste de dictionnaires avec infos des nœuds actifs
-        """
+     
         return [
             {
                 "id": phil_id,
@@ -233,24 +171,9 @@ class SocketManager:
         ]
     
     def get_nodes_count(self) -> Tuple[int, int]:
-        """
-        Retourne le nombre de nœuds actifs et total
-        
-        Returns:
-            Tuple (active_count, total_count)
-        """
         return len(self.active_nodes), len(self.philosophers)
 
-
-# ============================================
-# TEST EN STANDALONE
-# ============================================
-
 if __name__ == "__main__":
-    """
-    Test du SocketManager
-    Lance d'abord plusieurs nœuds, puis teste la communication
-    """
     
     logging.basicConfig(
         level=logging.INFO,
@@ -270,12 +193,10 @@ if __name__ == "__main__":
     
     manager = SocketManager()
     
-    # Test 1: Scan des nœuds
     print("\n[TEST 1] Scan des nœuds...")
     availability = manager.scan_all_nodes()
     print(f"\nNœuds disponibles: {sum(availability.values())}/6")
     
-    # Test 2: Broadcast d'une requête
     if manager.active_nodes:
         print("\n[TEST 2] Diffusion de la requête aux nœuds actifs...")
         responses = manager.broadcast_request(

@@ -13,18 +13,18 @@ function getAvatarUrl(filename) {
 
 const PHILOSOPHERS = {
   1: { name: "Aristote", emoji: "🏛️", avatar: getAvatarUrl("aristotle.png") },
-  2: { name: "Emmanuel Kant", emoji: "📚", avatar: getAvatarUrl("kant.png") },
+  2: { name: "Immanuel Kant", emoji: "📚", avatar: getAvatarUrl("kant.png") },
   3: {
     name: "Friedrich Nietzsche",
     emoji: "⚡",
     avatar: getAvatarUrl("nietzsche.png"),
   },
   4: {
-    name: "Fiodor Dostoïevski",
+    name: "Fyodor Dostoevsky",
     emoji: "✍️",
     avatar: getAvatarUrl("dostoevsky.png"),
   },
-  5: { name: "Léon Tolstoï", emoji: "🌾", avatar: getAvatarUrl("tolstoy.png") },
+  5: { name: "Leo Tolstoy", emoji: "🌾", avatar: getAvatarUrl("tolstoy.png") },
   6: { name: "Confucius", emoji: "🎋", avatar: getAvatarUrl("confucius.png") },
 };
 let chatState = {

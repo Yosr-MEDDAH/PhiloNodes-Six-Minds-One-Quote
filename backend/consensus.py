@@ -1,9 +1,3 @@
-# consensus.py
-"""
-Protocole de consensus distribué pour sélectionner la meilleure citation
-Implémente le vote, le calcul du quorum et la sélection du gagnant
-"""
-
 import logging
 from typing import Dict, List, Optional, Tuple
 
@@ -13,10 +7,6 @@ logger = logging.getLogger(__name__)
 
 
 class ConsensusProtocol:
-    """
-    Protocole de consensus pour agréger les votes des philosophes
-    """
-    
     def __init__(self):
         """Initialise le protocole de consensus"""
         self.quorum_threshold = QUORUM_THRESHOLD
@@ -28,23 +18,8 @@ class ConsensusProtocol:
         )
     
     def aggregate_votes(self, responses: Dict[int, Optional[Dict]]) -> Dict:
-        """
-        Agrège les votes de tous les philosophes et calcule le consensus
-        
-        Args:
-            responses: Dictionnaire {philosopher_id: response_dict}
-                      response_dict peut être None si pas de réponse
-        
-        Returns:
-            Dictionnaire contenant:
-            - winner: La citation gagnante avec toutes ses infos
-            - consensus: Statistiques du consensus
-            - votes_detail: Liste détaillée de tous les votes
-            - quorum_reached: Boolean
-        """
         logger.info(f"Agrégation des votes de {len(responses)} philosophes...")
         
-        # Filtrer les réponses valides
         valid_responses = {
             phil_id: resp 
             for phil_id, resp in responses.items() 
@@ -57,11 +32,10 @@ class ConsensusProtocol:
             logger.error("Aucune réponse valide reçue!")
             return self._no_consensus_result()
         
-        # Comptage des votes Accepte/Rejette
         votes_detail = []
         accepts = 0
         rejects = 0
-        candidates = {}  # {quote_id: {"quote": dict, "score": float, "supporters": list}}
+        candidates = {}  
         
         for phil_id, response in valid_responses.items():
             vote = response.get("vote", "Abstain")
@@ -70,7 +44,6 @@ class ConsensusProtocol:
             philosopher_name = response.get("philosopher_name", "Inconnu")
             reasoning = response.get("reasoning", "")
             
-            # Ajout au détail des votes
             votes_detail.append({
                 "philosopher_id": phil_id,
                 "philosopher_name": philosopher_name,
@@ -80,11 +53,9 @@ class ConsensusProtocol:
                 "quote_id": quote.get("quoteId") if quote else None
             })
             
-            # Comptage Accepte/Rejette
             if vote == "Accept":
                 accepts += 1
                 
-                # Enregistrement du candidat
                 if quote:
                     quote_id = quote.get("quoteId")
                     if quote_id not in candidates:
@@ -105,7 +76,6 @@ class ConsensusProtocol:
             elif vote == "Reject":
                 rejects += 1
         
-        # Calcul du quorum
         quorum_percentage = accepts / total_votes if total_votes > 0 else 0
         quorum_reached = (
             quorum_percentage >= self.quorum_threshold and 
@@ -117,7 +87,6 @@ class ConsensusProtocol:
             f"Quorum: {quorum_percentage*100:.1f}% (seuil: {self.quorum_threshold*100}%)"
         )
         
-        # Sélection du gagnant
         if not quorum_reached:
             logger.warning("Quorum non atteint! Pas de consensus.")
             return self._build_result(
@@ -129,7 +98,6 @@ class ConsensusProtocol:
                 quorum_reached=False
             )
         
-        # Sélection de la meilleure citation parmi les candidats
         winner_quote = self._select_winner(candidates)
         
         if not winner_quote:
@@ -155,16 +123,6 @@ class ConsensusProtocol:
         )
     
     def _select_winner(self, candidates: Dict) -> Optional[Dict]:
-        """
-        Sélectionne le gagnant parmi les candidats
-        Critère: Score moyen le plus élevé, avec départage par nombre de votes
-        
-        Args:
-            candidates: Dictionnaire des citations candidates avec scores
-            
-        Returns:
-            Dictionnaire avec infos du gagnant ou None
-        """
         if not candidates:
             return None
         
@@ -176,7 +134,6 @@ class ConsensusProtocol:
             avg_score = data["total_score"] / data["votes_count"]
             votes_count = data["votes_count"]
             
-            # Sélection: meilleur score moyen, ou plus de votes en cas d'égalité
             if (avg_score > best_avg_score) or \
                (avg_score == best_avg_score and votes_count > best_votes_count):
                 best_quote_id = quote_id
@@ -205,12 +162,6 @@ class ConsensusProtocol:
         total_votes: int,
         quorum_reached: bool
     ) -> Dict:
-        """
-        Construit le résultat final du consensus
-        
-        Returns:
-            Dictionnaire structuré avec tous les détails
-        """
         quorum_percentage = accepts / total_votes if total_votes > 0 else 0
         
         result = {
@@ -234,9 +185,6 @@ class ConsensusProtocol:
         return result
     
     def _no_consensus_result(self) -> Dict:
-        """
-        Retourne un résultat vide quand aucun vote n'est reçu
-        """
         return {
             "winner": None,
             "consensus": {
@@ -252,15 +200,7 @@ class ConsensusProtocol:
             "error": "Aucune réponse valide des nœuds philosophes"
         }
 
-
-# ============================================
-# TEST EN STANDALONE
-# ============================================
-
 if __name__ == "__main__":
-    """
-    Test du protocole de consensus avec des données simulées
-    """
     
     logging.basicConfig(
         level=logging.INFO,
@@ -272,9 +212,8 @@ if __name__ == "__main__":
     print("TEST DU PROTOCOLE DE CONSENSUS")
     print("="*60)
     
-    # Simulation de réponses des philosophes
     mock_responses = {
-        1: {  # Aristotle
+        1: { 
             "philosopher_name": "Aristotle",
             "vote": "Accept",
             "score": 7.5,
@@ -286,7 +225,7 @@ if __name__ == "__main__":
                 "categoryName": "Happiness and well-being"
             }
         },
-        2: {  # Kant
+        2: { 
             "philosopher_name": "Immanuel Kant",
             "vote": "Accept",
             "score": 6.2,
@@ -298,7 +237,7 @@ if __name__ == "__main__":
                 "categoryName": "Happiness and well-being"
             }
         },
-        3: {  # Nietzsche
+        3: { 
             "philosopher_name": "Friedrich Nietzsche",
             "vote": "Reject",
             "score": 4.0,
@@ -310,7 +249,7 @@ if __name__ == "__main__":
                 "categoryName": "Happiness and well-being"
             }
         },
-        5: {  # Tolstoy
+        5: {  
             "philosopher_name": "Leo Tolstoy",
             "vote": "Accept",
             "score": 9.2,
@@ -322,7 +261,7 @@ if __name__ == "__main__":
                 "categoryName": "Happiness and well-being"
             }
         },
-        6: {  # Confucius
+        6: {  
             "philosopher_name": "Confucius",
             "vote": "Accept",
             "score": 8.1,
@@ -336,11 +275,10 @@ if __name__ == "__main__":
         }
     }
     
-    # Test du consensus
+   
     protocol = ConsensusProtocol()
     result = protocol.aggregate_votes(mock_responses)
     
-    # Affichage des résultats
     print("\n" + "="*60)
     print("RÉSULTAT DU CONSENSUS:")
     print("="*60)
@@ -352,7 +290,7 @@ if __name__ == "__main__":
     
     if result["winner"]:
         winner = result["winner"]
-        print(f"\n🏆 GAGNANT:")
+        print(f"\n GAGNANT:")
         print(f"  ID Citation: {winner['quote_id']}")
         print(f"  Score Moyen: {winner['average_score']}/10")
         print(f"  Votes: {winner['votes_count']}")

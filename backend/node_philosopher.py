@@ -46,16 +46,11 @@ class PhilosopherNode:
         )
     
     def _load_quotes(self):
-        """Charge les 10 citations du philosophe depuis JSON"""
         quotes_data = load_json_file(QUOTES_JSON)
         self.quotes = get_philosopher_quotes(quotes_data, self.philosopher_id)
         self.logger.info(f"Chargement de {len(self.quotes)} citations pour {self.name}")
     
     def start(self):
-        """
-        Démarre le serveur socket TCP du nœud
-        Écoute sur HOST:PORT pour recevoir des requêtes
-        """
         try:
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -65,7 +60,7 @@ class PhilosopherNode:
             
             self.running = True
             self.logger.info(
-                f"🟢 {self.name} écoute sur {HOST}:{self.port}"
+                f" {self.name} écoute sur {HOST}:{self.port}"
             )
             
             while self.running:
@@ -166,40 +161,39 @@ class PhilosopherNode:
     def _generate_reasoning(
         self, quote: Dict, score: float, vote: str
     ) -> str:
-        """Génère le raisonnement en français"""
         category = quote.get("categoryName", "")
         
-        if self.behavior == "virtue_seeker":  # Aristotle
+        if self.behavior == "virtue_seeker":  
             if vote == "Accept":
                 return f"Ceci promeut la vertu et la vie bonne dans {category}"
             else:
                 return f"Manque de vertu ou de sagesse pratique suffisante"
         
-        elif self.behavior == "strict_duty":  # Kant
+        elif self.behavior == "strict_duty":  
             if vote == "Accept":
                 return f"S'aligne avec le devoir moral et la loi universelle dans {category}"
             else:
                 return f"Principe moral ou impératif catégorique insuffisant"
         
-        elif self.behavior == "power_seeker":  # Nietzsche
+        elif self.behavior == "power_seeker": 
             if vote == "Accept":
                 return f"Exprime la volonté de puissance et le dépassement de soi dans {category}"
             else:
                 return f"Trop faible ou conventionnel pour la vraie excellence"
         
-        elif self.behavior == "depth_seeker":  # Dostoevsky
+        elif self.behavior == "depth_seeker": 
             if vote == "Accept":
                 return f"Révèle une vérité profonde sur la souffrance et la foi dans {category}"
             else:
                 return f"Manque de profondeur spirituelle ou de perspicacité existentielle"
         
-        elif self.behavior == "love_seeker":  # Tolstoy
+        elif self.behavior == "love_seeker":  
             if vote == "Accept":
                 return f"Incarne l'amour et le service aux autres dans {category}"
             else:
                 return f"Accent insuffisant sur la compassion et la simplicité"
         
-        elif self.behavior == "harmony_seeker":  # Confucius
+        elif self.behavior == "harmony_seeker":  
             if vote == "Accept":
                 return f"Promeut l'harmonie sociale et la conduite appropriée dans {category}"
             else:
@@ -208,7 +202,6 @@ class PhilosopherNode:
         return f"Score de pertinence: {score}"
     
     def _format_no_quote_response(self) -> str:
-        """Formate une réponse quand aucune citation n'est trouvée"""
         return json.dumps({
             "type": "RESPONSE",
             "philosopher_id": self.philosopher_id,
@@ -225,13 +218,12 @@ class PhilosopherNode:
         if self.socket:
             try:
                 self.socket.close()
-                self.logger.info(f"🔴 {self.name} arrêté")
+                self.logger.info(f" {self.name} arrêté")
             except:
                 pass
 
 
 def run_node(philosopher_id: int):
-    """Lance un nœud philosophe"""
     node = PhilosopherNode(philosopher_id)
     try:
         node.start()

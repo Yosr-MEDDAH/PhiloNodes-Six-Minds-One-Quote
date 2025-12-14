@@ -3,10 +3,10 @@ echo ========================================
 echo Lancement de tous les Philosophes dans UNE Fenêtre
 echo ========================================
 
-REM Activer l'environnement virtuel
+REM 
 if exist "..\venv\Scripts\activate.bat" call ..\venv\Scripts\activate.bat
 
-REM Démarrer tous les nœuds en arrière-plan avec start /B
+REM 
 echo Démarrage des nœuds...
 start /B python node_philosopher.py 1
 start /B python node_philosopher.py 2

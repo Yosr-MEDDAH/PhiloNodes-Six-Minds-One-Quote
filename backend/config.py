@@ -83,16 +83,12 @@ SOCKET_TIMEOUT = 2.0
 CONNECTION_RETRY = 3
 HEARTBEAT_INTERVAL = 5.0  
 
-# ========================================
-# PROTOCOLE DE CONSENSUS - MIS Ã€ JOUR POUR DES EXIGENCES PLUS SOUPLES
-# ========================================
-
-QUORUM_THRESHOLD = 0.50     # ChangÃ© de 0.67 (50% au lieu de 67%)
-MIN_VOTES_REQUIRED = 2       # ChangÃ© de 4 (besoin de 3 au lieu de 4)
+QUORUM_THRESHOLD = 0.50    
+MIN_VOTES_REQUIRED = 2      
 MAX_VOTES = 6
 
-MIN_RELEVANCE_SCORE = 2.0    # Score minimum Ã  considÃ©rer
-ACCEPT_THRESHOLD = 3.0       # ChangÃ© de 5.0 (acceptation plus permissive)
+MIN_RELEVANCE_SCORE = 2.0   
+ACCEPT_THRESHOLD = 3.0     
 
 
 import os
@@ -119,35 +115,6 @@ MSG_TYPE_REQUEST = "REQUEST"
 MSG_TYPE_RESPONSE = "RESPONSE"
 MSG_TYPE_HEARTBEAT = "HEARTBEAT"
 MSG_TYPE_SHUTDOWN = "SHUTDOWN"
-
-"""
-Formats de messages :
-
-REQUEST:
-{
-    "type": "REQUEST",
-    "context": "stress au travail",
-    "keywords": ["Ã©chÃ©ance", "pression", "anxiÃ©tÃ©"],
-    "category": "Happiness and well-being"
-}
-
-RESPONSE:
-{
-    "type": "RESPONSE",
-    "philosopher_id": 5,
-    "philosopher_name": "Leo Tolstoy",
-    "quote": {
-        "quoteId": 50,
-        "text": "La joie ne peut Ãªtre rÃ©elle que si...",
-        "source": "Le Royaume de Dieu",
-        "category": 10,
-        "categoryName": "Happiness and well-being"
-    },
-    "score": 9.2,
-    "vote": "Accept",
-    "reasoning": "Haute pertinence pour le soulagement du stress par le service"
-}
-"""
 
 
 LOG_LEVEL = "INFO"  
