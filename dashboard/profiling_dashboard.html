@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tableau de Bord de Profilage - Séquentiel vs Parallèle</title>
+        <link rel="stylesheet" href="profiling_dashboard.css" />
+    </head>
+    <body>
+        <div class="container">
+        <div class="header">
+            <h1>PhiloNodes – Six Minds, One Quote</h1>
+            <p>
+            Comparaison des performances : Diffusion Séquentielle vs Parallèle
+            </p>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="refreshData()">
+            Actualiser les Données
+            </button>
+            <button class="btn btn-secondary" onclick="exportData()">
+            Exporter les Résultats
+            </button>
+            <button class="btn btn-danger" onclick="clearData()">
+            Effacer l'Historique
+            </button>
+            <div class="status" id="status">
+            <span class="status-dot"></span>
+            <span>Prêt</span>
+            </div>
+        </div>
+
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card sequential">
+            <h3>Moyenne Séquentielle</h3>
+            <div class="value" id="seqAvg">0.000s</div>
+            <div class="label">Durée moyenne</div>
+            </div>
+            <div class="stat-card parallel">
+            <h3>Moyenne Parallèle</h3>
+            <div class="value" id="parAvg">0.000s</div>
+            <div class="label">Durée moyenne</div>
+            </div>
+            <div class="stat-card comparison">
+            <h3>Accélération</h3>
+            <div class="value" id="speedup">0.00x</div>
+            <div class="label">Gain de performance</div>
+            </div>
+            <div class="stat-card comparison">
+            <h3>Amélioration</h3>
+            <div class="value" id="improvement">0.0%</div>
+            <div class="label">Temps économisé</div>
+            </div>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-container">
+            <h2>Comparaison des Durées</h2>
+            <div class="chart-wrapper">
+                <canvas id="durationChart"></canvas>
+            </div>
+            </div>
+
+            <div class="chart-container">
+            <h2>Taux de Réussite</h2>
+            <div class="chart-wrapper">
+                <canvas id="successChart"></canvas>
+            </div>
+            </div>
+
+            <div class="chart-container">
+            <h2>Performance par Nombre de Nœuds</h2>
+            <div class="chart-wrapper">
+                <canvas id="nodeChart"></canvas>
+            </div>
+            </div>
+
+            <div class="chart-container">
+            <h2>Analyse de Distribution</h2>
+            <div class="chart-wrapper">
+                <canvas id="distributionChart"></canvas>
+            </div>
+            </div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+
+        <script src="profiling_dashboard.js"></script>
+    </body>
+    </html>

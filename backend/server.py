@@ -13,6 +13,7 @@ from config import (
 )
 from socket_manager import SocketManager
 from consensus import ConsensusProtocol
+from profiling import profiler
 
 logging.basicConfig(
     level=logging.INFO,
@@ -71,7 +72,7 @@ async def startup_event():
     logger.info("Démarrage du serveur...")
     socket_manager.scan_all_nodes()
     active, total = socket_manager.get_nodes_count()
-    logger.info(f" Serveur prêt! {active}/{total} nœuds actifs")
+    logger.info(f"Serveur prêt! {active}/{total} nœuds actifs")
     
     asyncio.create_task(periodic_heartbeat())
 
@@ -91,6 +92,7 @@ class RecommendationRequest(BaseModel):
     context: Optional[str] = Field(None, description="Contexte textuel")
     keywords: List[str] = Field(default_factory=list, description="Mots-clés")
     category: Optional[str] = Field(None, description="Catégorie")
+    method: Optional[str] = Field("parallel", description="Method: 'sequential' or 'parallel'")
 
 class QuoteResponse(BaseModel):
     winner: Optional[dict] = Field(description="Citation gagnante")
@@ -145,40 +147,36 @@ async def root():
 async def recommend_quote(request: RecommendationRequest):
     start_time = time.time()
     
-    logger.info(f"Nouvelle demande: contexte='{request.context}'")
+    logger.info(f"Nouvelle demande [{request.method}]: contexte='{request.context}'")
     
     log_message("REQUEST", "Client", "Coordinateur", f"Contexte: {request.context}")
     
     active, total = socket_manager.get_nodes_count()
     if active == 0:
-        logger.error(" Aucun nœud actif!")
+        logger.error("Aucun nœud actif!")
         raise HTTPException(status_code=503, detail="Aucun nœud actif")
+    
     node_timings = {}
     
     log_message("BROADCAST", "Coordinateur", "Tous les nœuds", "Distribution de la requête")
     
-    responses = {}
-    for phil_id in socket_manager.active_nodes.keys():
-        node_start = time.time()
-        
-        log_message("TCP_SEND", "Coordinateur", f"Nœud {phil_id}", f"Envoi requête TCP")
-        
-        response = socket_manager.send_request_to_node(
-            phil_id, request.context, request.keywords, request.category
+    if request.method == "sequential":
+        responses = socket_manager.broadcast_request(
+            request.context, request.keywords, request.category
         )
-        
-        node_time = time.time() - node_start
-        node_timings[phil_id] = round(node_time, 3)
-        
+    else:
+        responses = socket_manager.broadcast_request_parallel(
+            request.context, request.keywords, request.category
+        )
+    
+    for phil_id, response in responses.items():
         if response:
             log_message("TCP_RECV", f"Nœud {phil_id}", "Coordinateur", 
                        f"Vote: {response.get('vote')}, Score: {response.get('score')}")
-            update_node_metrics(phil_id, node_time, True, response.get('vote', 'Abstain'))
+            update_node_metrics(phil_id, 0.0, True, response.get('vote', 'Abstain'))
         else:
             log_message("TCP_TIMEOUT", f"Nœud {phil_id}", "Coordinateur", "Pas de réponse")
-            update_node_metrics(phil_id, node_time, False, "Timeout")
-        
-        responses[phil_id] = response
+            update_node_metrics(phil_id, 0.0, False, "Timeout")
     
     log_message("CONSENSUS_START", "Coordinateur", "Protocole", "Calcul du consensus")
     result = consensus_protocol.aggregate_votes(responses)
@@ -227,7 +225,7 @@ async def recommend_quote(request: RecommendationRequest):
                f"Consensus atteint" if result["winner"] else "Pas de consensus")
     
     if result["winner"]:
-        logger.info(f" Citation #{result['winner']['quote_id']}, quorum={result['consensus']['quorum_percentage']}%")
+        logger.info(f"Citation #{result['winner']['quote_id']}, quorum={result['consensus']['quorum_percentage']}%")
     
     return response_data
 
@@ -298,6 +296,31 @@ async def get_global_metrics():
             (global_metrics["successful_consensus"] / global_metrics["total_consensus_sessions"] * 100)
             if global_metrics["total_consensus_sessions"] > 0 else 0, 1
         )
+    }
+
+
+@app.get("/profiling/data")
+async def get_profiling_data():
+    return {
+        "statistics": profiler.get_statistics(),
+        "chart_data": profiler.get_chart_data()
+    }
+
+
+@app.post("/profiling/export")
+async def export_profiling_data():
+    filepath = profiler.export_results()
+    return {
+        "message": "Results exported",
+        "filepath": filepath
+    }
+
+
+@app.delete("/profiling/clear")
+async def clear_profiling_data():
+    profiler.clear_results()
+    return {
+        "message": "Profiling history cleared"
     }
 
 
@@ -373,9 +396,10 @@ if __name__ == "__main__":
     print("="*60)
     print("SERVEUR DISTRIBUÉ - RECOMMANDATION PHILOSOPHIQUE")
     print("="*60)
-    print("\n Serveur sur http://127.0.0.1:8000")
-    print("\n Documentation: http://127.0.0.1:8000/docs")
-    print("\n Dashboard: Ouvrez dashboard/index.html")
+    print("\nServeur sur http://127.0.0.1:8000")
+    print("\nDocumentation: http://127.0.0.1:8000/docs")
+    print("\nDashboard: Ouvrez dashboard/index.html")
+    print("\nProfiling: Ouvrez profiling_dashboard.html")
     print("="*60 + "\n")
     
     uvicorn.run(

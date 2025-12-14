@@ -1,9 +1,9 @@
-
 import socket
 import json
 import logging
 from typing import Dict, List, Optional, Tuple
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from config import (
     HOST, PHILOSOPHERS, SOCKET_TIMEOUT, 
@@ -12,6 +12,14 @@ from config import (
 from utils import parse_message
 
 logger = logging.getLogger(__name__)
+
+try:
+    from profiling import profiler, ProfileResult
+    PROFILING_ENABLED = True
+    logger.info("Profiling module loaded successfully")
+except ImportError:
+    PROFILING_ENABLED = False
+    logger.warning("Profiling module not available")
 
 
 class SocketManager:
@@ -45,11 +53,11 @@ class SocketManager:
                     "port": port,
                     "status": "active"
                 }
-                logger.info(f" Nœud {name} (port {port}) est disponible")
+                logger.info(f"Nœud {name} (port {port}) est disponible")
                 return True
                 
         except (socket.timeout, ConnectionRefusedError, Exception) as e:
-            logger.warning(f" Nœud {name} (port {port}) indisponible: {e}")
+            logger.warning(f"Nœud {name} (port {port}) indisponible: {e}")
             if philosopher_id in self.active_nodes:
                 del self.active_nodes[philosopher_id]
             return False
@@ -112,7 +120,7 @@ class SocketManager:
                 
                 if response:
                     logger.info(
-                        f" Réponse reçue de {name}: "
+                        f"Réponse reçue de {name}: "
                         f"vote={response.get('vote')}, score={response.get('score')}"
                     )
                     return response
@@ -130,7 +138,7 @@ class SocketManager:
                 logger.error(f"Erreur de communication avec {name}: {e}")
                 break
         
-        logger.error(f" Échec de réception de réponse de {name} après {CONNECTION_RETRY} tentatives")
+        logger.error(f"Échec de réception de réponse de {name} après {CONNECTION_RETRY} tentatives")
         return None
     
     def broadcast_request(
@@ -139,8 +147,8 @@ class SocketManager:
         keywords: List[str],
         category_name: Optional[str]
     ) -> Dict[int, Optional[Dict]]:
-       
-        logger.info(f"Diffusion de la requête à {len(self.active_nodes)} nœuds actifs...")
+        logger.info(f"[SEQUENTIAL] Diffusion de la requête à {len(self.active_nodes)} nœuds actifs...")
+        start_time = time.time()
         
         responses = {}
         
@@ -153,13 +161,101 @@ class SocketManager:
             )
             responses[phil_id] = response
         
+        elapsed = time.time() - start_time
         successful = sum(1 for r in responses.values() if r is not None)
-        logger.info(f"Diffusion terminée: {successful}/{len(self.active_nodes)} nœuds ont répondu")
+        
+        logger.info(
+            f"[SEQUENTIAL] Diffusion terminée: {successful}/{len(self.active_nodes)} nœuds "
+            f"ont répondu en {elapsed:.3f}s"
+        )
+        
+        if PROFILING_ENABLED:
+            try:
+                result = ProfileResult(
+                    method="sequential",
+                    start_time=start_time,
+                    end_time=time.time(),
+                    duration=elapsed,
+                    active_nodes=len(responses),
+                    successful_responses=successful,
+                    failed_responses=len(responses) - successful,
+                    node_timings={phil_id: 0.0 for phil_id in responses.keys()},
+                    context=context or "",
+                    timestamp=time.time()
+                )
+                profiler.record_result(result)
+                logger.info(f"[PROFILING] Sequential result recorded: {elapsed:.3f}s")
+            except Exception as e:
+                logger.error(f"Error recording profiling result: {e}")
+        
+        return responses
+    
+    def broadcast_request_parallel(
+        self,
+        context: Optional[str],
+        keywords: List[str],
+        category_name: Optional[str],
+        max_workers: int = 6
+    ) -> Dict[int, Optional[Dict]]:
+        logger.info(f"[PARALLEL] Diffusion de la requête à {len(self.active_nodes)} nœuds actifs...")
+        start_time = time.time()
+        
+        responses = {}
+        
+        def send_to_node(phil_id: int) -> Tuple[int, Optional[Dict]]:
+            response = self.send_request_to_node(
+                philosopher_id=phil_id,
+                context=context,
+                keywords=keywords,
+                category_name=category_name
+            )
+            return (phil_id, response)
+        
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            future_to_phil = {
+                executor.submit(send_to_node, phil_id): phil_id 
+                for phil_id in self.active_nodes.keys()
+            }
+            
+            for future in as_completed(future_to_phil):
+                try:
+                    phil_id, response = future.result()
+                    responses[phil_id] = response
+                except Exception as e:
+                    phil_id = future_to_phil[future]
+                    logger.error(f"Exception lors de la requête parallèle au nœud {phil_id}: {e}")
+                    responses[phil_id] = None
+        
+        elapsed = time.time() - start_time
+        successful = sum(1 for r in responses.values() if r is not None)
+        
+        logger.info(
+            f"[PARALLEL] Diffusion terminée: {successful}/{len(self.active_nodes)} nœuds "
+            f"ont répondu en {elapsed:.3f}s"
+        )
+        
+        if PROFILING_ENABLED:
+            try:
+                result = ProfileResult(
+                    method="parallel",
+                    start_time=start_time,
+                    end_time=time.time(),
+                    duration=elapsed,
+                    active_nodes=len(responses),
+                    successful_responses=successful,
+                    failed_responses=len(responses) - successful,
+                    node_timings={phil_id: 0.0 for phil_id in responses.keys()},
+                    context=context or "",
+                    timestamp=time.time()
+                )
+                profiler.record_result(result)
+                logger.info(f"[PROFILING] Parallel result recorded: {elapsed:.3f}s")
+            except Exception as e:
+                logger.error(f"Error recording profiling result: {e}")
         
         return responses
     
     def get_active_nodes_info(self) -> List[Dict]:
-     
         return [
             {
                 "id": phil_id,
@@ -173,6 +269,7 @@ class SocketManager:
     def get_nodes_count(self) -> Tuple[int, int]:
         return len(self.active_nodes), len(self.philosophers)
 
+
 if __name__ == "__main__":
     
     logging.basicConfig(
@@ -182,12 +279,15 @@ if __name__ == "__main__":
     )
     
     print("="*60)
-    print("TEST DU SOCKET MANAGER")
+    print("TEST DU SOCKET MANAGER - SEQUENTIAL vs PARALLEL")
     print("="*60)
     print("\nAssurez-vous de démarrer quelques nœuds d'abord:")
-    print("  python node_philosopher.py 1  # Aristotle")
-    print("  python node_philosopher.py 2  # Kant")
-    print("  python node_philosopher.py 5  # Tolstoy")
+    print("  python node_philosopher.py 1")
+    print("  python node_philosopher.py 2")
+    print("  python node_philosopher.py 3")
+    print("  python node_philosopher.py 4")
+    print("  python node_philosopher.py 5")
+    print("  python node_philosopher.py 6")
     print("\nAppuyez sur Entrée pour continuer...")
     input()
     
@@ -198,27 +298,64 @@ if __name__ == "__main__":
     print(f"\nNœuds disponibles: {sum(availability.values())}/6")
     
     if manager.active_nodes:
-        print("\n[TEST 2] Diffusion de la requête aux nœuds actifs...")
-        responses = manager.broadcast_request(
-            context="se sentir stressé au travail",
-            keywords=["stress", "travail", "pression"],
-            category_name="Happiness and well-being"
-        )
+        test_context = "se sentir stressé au travail"
+        test_keywords = ["stress", "travail", "pression"]
+        test_category = "Happiness and well-being"
         
         print("\n" + "="*60)
-        print("RÉPONSES:")
+        print("[TEST 2] SEQUENTIAL BROADCAST")
+        print("="*60)
+        seq_start = time.time()
+        seq_responses = manager.broadcast_request(
+            context=test_context,
+            keywords=test_keywords,
+            category_name=test_category
+        )
+        seq_time = time.time() - seq_start
+        
+        print(f"\nTemps séquentiel: {seq_time:.3f}s")
+        print(f"Réponses reçues: {sum(1 for r in seq_responses.values() if r)}/{len(seq_responses)}")
+        
+        time.sleep(1)
+        
+        print("\n" + "="*60)
+        print("[TEST 3] PARALLEL BROADCAST")
+        print("="*60)
+        par_start = time.time()
+        par_responses = manager.broadcast_request_parallel(
+            context=test_context,
+            keywords=test_keywords,
+            category_name=test_category
+        )
+        par_time = time.time() - par_start
+        
+        print(f"\nTemps parallèle: {par_time:.3f}s")
+        print(f"Réponses reçues: {sum(1 for r in par_responses.values() if r)}/{len(par_responses)}")
+        
+        print("\n" + "="*60)
+        print("COMPARAISON")
+        print("="*60)
+        speedup = seq_time / par_time if par_time > 0 else 0
+        improvement = ((seq_time - par_time) / seq_time * 100) if seq_time > 0 else 0
+        
+        print(f"\nTemps séquentiel:  {seq_time:.3f}s")
+        print(f"Temps parallèle:   {par_time:.3f}s")
+        print(f"Accélération:      {speedup:.2f}x")
+        print(f"Amélioration:      {improvement:.1f}%")
+        
+        print("\n" + "="*60)
+        print("RÉPONSES DÉTAILLÉES")
         print("="*60)
         
-        for phil_id, response in responses.items():
+        for phil_id in sorted(seq_responses.keys()):
+            response = seq_responses.get(phil_id) or par_responses.get(phil_id)
             if response:
                 print(f"\n{response['philosopher_name']}:")
                 print(f"  Vote: {response['vote']}")
                 print(f"  Score: {response['score']}/10")
                 print(f"  Citation: \"{response['quote']['text'][:60]}...\"")
-            else:
-                print(f"\nPhilosophe {phil_id}: Pas de réponse")
     else:
-        print("\n Aucun nœud actif trouvé. Démarrez d'abord quelques nœuds!")
+        print("\nAucun nœud actif trouvé. Démarrez d'abord quelques nœuds!")
     
     print("\n" + "="*60)
     print("Test terminé!")
